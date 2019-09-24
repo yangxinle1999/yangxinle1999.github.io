@@ -17,7 +17,8 @@
 <meta property="og:description" content="&amp;#x5206;&amp;#x9875;&amp;#x5728;&amp;#x7F51;&amp;#x7AD9;&amp;#x5F00;&amp;#x53D1;&amp;#x4E2D;&amp;#x5F88;&amp;#x5E38;&amp;#x89C1;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x7528;ssm&amp;#x6846;&amp;#x67B6;&amp;#x548C;bootstrap&amp;#x6765;&amp;#x603B;&amp;#x7ED3;&amp;#x4">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/09/24/ssm分页总结/tu1.png">
-<meta property="og:updated_time" content="2019-09-24T14:11:57.788Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/24/ssm分页总结/tu2.png">
+<meta property="og:updated_time" content="2019-09-24T14:18:22.845Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssm分页总结">
 <meta name="twitter:description" content="&amp;#x5206;&amp;#x9875;&amp;#x5728;&amp;#x7F51;&amp;#x7AD9;&amp;#x5F00;&amp;#x53D1;&amp;#x4E2D;&amp;#x5F88;&amp;#x5E38;&amp;#x89C1;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x7528;ssm&amp;#x6846;&amp;#x67B6;&amp;#x548C;bootstrap&amp;#x6765;&amp;#x603B;&amp;#x7ED3;&amp;#x4">
@@ -201,6 +202,7 @@
 
 <h3 id="&#x8FD9;&#x91CC;&#x9762;&#x91CD;&#x8981;&#x7684;&#x662F;PageInfo&#x8FD9;&#x4E2A;api&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x4E3A;&#x6211;&#x4EEC;&#x5C01;&#x88C5;&#x4E86;pageNum&#xFF08;&#x603B;&#x9875;&#x6570;&#xFF09;&#x3001;prePage&#xFF08;&#x524D;&#x4E00;&#x9875;&#xFF09;&#x3001;nextPage&#xFF08;&#x540E;&#x4E00;&#x9875;&#xFF09;&#x3001;pages&#xFF08;&#x5F53;&#x524D;&#x9875;&#xFF09;&#x7B49;&#x8BB8;&#x591A;&#x91CD;"><a href="#&#x8FD9;&#x91CC;&#x9762;&#x91CD;&#x8981;&#x7684;&#x662F;PageInfo&#x8FD9;&#x4E2A;api&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x4E3A;&#x6211;&#x4EEC;&#x5C01;&#x88C5;&#x4E86;pageNum&#xFF08;&#x603B;&#x9875;&#x6570;&#xFF09;&#x3001;prePage&#xFF08;&#x524D;&#x4E00;&#x9875;&#xFF09;&#x3001;nextPage&#xFF08;&#x540E;&#x4E00;&#x9875;&#xFF09;&#x3001;pages&#xFF08;&#x5F53;&#x524D;&#x9875;&#xFF09;&#x7B49;&#x8BB8;&#x591A;&#x91CD;" class="headerlink" title="&#x8FD9;&#x91CC;&#x9762;&#x91CD;&#x8981;&#x7684;&#x662F;PageInfo&#x8FD9;&#x4E2A;api&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x4E3A;&#x6211;&#x4EEC;&#x5C01;&#x88C5;&#x4E86;pageNum&#xFF08;&#x603B;&#x9875;&#x6570;&#xFF09;&#x3001;prePage&#xFF08;&#x524D;&#x4E00;&#x9875;&#xFF09;&#x3001;nextPage&#xFF08;&#x540E;&#x4E00;&#x9875;&#xFF09;&#x3001;pages&#xFF08;&#x5F53;&#x524D;&#x9875;&#xFF09;&#x7B49;&#x8BB8;&#x591A;&#x91CD;"></a>&#x8FD9;&#x91CC;&#x9762;&#x91CD;&#x8981;&#x7684;&#x662F;PageInfo&#x8FD9;&#x4E2A;api&#xFF0C;&#x5B83;&#x5185;&#x90E8;&#x4E3A;&#x6211;&#x4EEC;&#x5C01;&#x88C5;&#x4E86;pageNum&#xFF08;&#x603B;&#x9875;&#x6570;&#xFF09;&#x3001;prePage&#xFF08;&#x524D;&#x4E00;&#x9875;&#xFF09;&#x3001;nextPage&#xFF08;&#x540E;&#x4E00;&#x9875;&#xFF09;&#x3001;pages&#xFF08;&#x5F53;&#x524D;&#x9875;&#xFF09;&#x7B49;&#x8BB8;&#x591A;&#x91CD;</h3><h3 id="&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x65F6;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x62FF;&#x5373;&#x53EF;&#xFF01;"><a href="#&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x65F6;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x62FF;&#x5373;&#x53EF;&#xFF01;" class="headerlink" title="&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x65F6;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x62FF;&#x5373;&#x53EF;&#xFF01;"></a>&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x7528;&#x65F6;&#x6211;&#x4EEC;&#x76F4;&#x63A5;&#x62FF;&#x5373;&#x53EF;&#xFF01;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">public class PageInfo&lt;T&gt; implements Serializable {</span><br><span class="line">    private static final long serialVersionUID = 1L;</span><br><span class="line">    private int pageNum;</span><br><span class="line">    private int pageSize;</span><br><span class="line">    private int size;</span><br><span class="line">    private int startRow;</span><br><span class="line">    private int endRow;</span><br><span class="line">    private long total;</span><br><span class="line">    private int pages;</span><br><span class="line">    private List&lt;T&gt; list;</span><br><span class="line">    private int prePage;</span><br><span class="line">    private int nextPage;</span><br><span class="line">    private boolean isFirstPage;</span><br><span class="line">    private boolean isLastPage;</span><br><span class="line">    private boolean hasPreviousPage;</span><br><span class="line">    private boolean hasNextPage;</span><br><span class="line">    private int navigatePages;</span><br><span class="line">    private int[] navigatepageNums;</span><br><span class="line">    private int navigateFirstPage;</span><br><span class="line">    private int navigateLastPage;</span><br></pre></td></tr></table></figure>
 
+<h3 id="&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;"><a href="#&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;" class="headerlink" title="&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;"></a>&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</h3><p><img src="/2019/09/24/ssm&#x5206;&#x9875;&#x603B;&#x7ED3;/tu2.png" alt="img"></p>
 
       
 
@@ -339,7 +341,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#分页在网站开发中很常见，在这里我用ssm框架和bootstrap来总结一下分页的基本流程。"><span class="toc-number">1.</span> <span class="toc-text">分页在网站开发中很常见，在这里我用ssm框架和bootstrap来总结一下分页的基本流程。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#首先导入pagehelper依赖（治理使用pagehelper来做分页）"><span class="toc-number">2.</span> <span class="toc-text">首先导入pagehelper依赖（治理使用pagehelper来做分页）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在mybatisconfiger-xml中引入分页的插件："><span class="toc-number">3.</span> <span class="toc-text">在mybatisconfiger.xml中引入分页的插件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在bootstrap中文网站下载bootstrap-css和bootstrap-js："><span class="toc-number">4.</span> <span class="toc-text">在bootstrap中文网站下载bootstrap.css和bootstrap.js：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载完后倒进idea："><span class="toc-number">5.</span> <span class="toc-text">下载完后倒进idea：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#展示一下我分页页面的代码："><span class="toc-number">6.</span> <span class="toc-text">展示一下我分页页面的代码：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其中bootstrap的代码需要我们复制官网分页的代码（很多种样式自己选择）"><span class="toc-number">7.</span> <span class="toc-text">其中bootstrap的代码需要我们复制官网分页的代码（很多种样式自己选择）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#我上述的bootstrap的代码是"><span class="toc-number">7.1.</span> <span class="toc-text">我上述的bootstrap的代码是:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#我的controller层（不再写dao和service层了）"><span class="toc-number">8.</span> <span class="toc-text">我的controller层（不再写dao和service层了）:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这里面重要的是PageInfo这个api，它内部为我们封装了pageNum（总页数）、prePage（前一页）、nextPage（后一页）、pages（当前页）等许多重"><span class="toc-number">9.</span> <span class="toc-text">这里面重要的是PageInfo这个api，它内部为我们封装了pageNum（总页数）、prePage（前一页）、nextPage（后一页）、pages（当前页）等许多重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#要的属性，用时我们直接拿即可！"><span class="toc-number">10.</span> <span class="toc-text">要的属性，用时我们直接拿即可！</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#分页在网站开发中很常见，在这里我用ssm框架和bootstrap来总结一下分页的基本流程。"><span class="toc-number">1.</span> <span class="toc-text">分页在网站开发中很常见，在这里我用ssm框架和bootstrap来总结一下分页的基本流程。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#首先导入pagehelper依赖（治理使用pagehelper来做分页）"><span class="toc-number">2.</span> <span class="toc-text">首先导入pagehelper依赖（治理使用pagehelper来做分页）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在mybatisconfiger-xml中引入分页的插件："><span class="toc-number">3.</span> <span class="toc-text">在mybatisconfiger.xml中引入分页的插件：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在bootstrap中文网站下载bootstrap-css和bootstrap-js："><span class="toc-number">4.</span> <span class="toc-text">在bootstrap中文网站下载bootstrap.css和bootstrap.js：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载完后倒进idea："><span class="toc-number">5.</span> <span class="toc-text">下载完后倒进idea：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#展示一下我分页页面的代码："><span class="toc-number">6.</span> <span class="toc-text">展示一下我分页页面的代码：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其中bootstrap的代码需要我们复制官网分页的代码（很多种样式自己选择）"><span class="toc-number">7.</span> <span class="toc-text">其中bootstrap的代码需要我们复制官网分页的代码（很多种样式自己选择）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#我上述的bootstrap的代码是"><span class="toc-number">7.1.</span> <span class="toc-text">我上述的bootstrap的代码是:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#我的controller层（不再写dao和service层了）"><span class="toc-number">8.</span> <span class="toc-text">我的controller层（不再写dao和service层了）:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这里面重要的是PageInfo这个api，它内部为我们封装了pageNum（总页数）、prePage（前一页）、nextPage（后一页）、pages（当前页）等许多重"><span class="toc-number">9.</span> <span class="toc-text">这里面重要的是PageInfo这个api，它内部为我们封装了pageNum（总页数）、prePage（前一页）、nextPage（后一页）、pages（当前页）等许多重</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#要的属性，用时我们直接拿即可！"><span class="toc-number">10.</span> <span class="toc-text">要的属性，用时我们直接拿即可！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#效果如下："><span class="toc-number">11.</span> <span class="toc-text">效果如下：</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -484,27 +486,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">支付宝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -513,6 +507,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">上传和下载文件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
             
             <div class="clearfix"></div>
