@@ -8,13 +8,13 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>@ModelAttribute的总结 | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#x201C;@ModelAttribute&amp;#x201D;&amp;#x662F;&amp;#x6211;&amp;#x4EEC;&amp;#x5E38;&amp;#x7528;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4E4B;&amp;#x4E00;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;">
+  <meta name="description" content="&amp;#x2018;@ModelAttribute&amp;#x2019;&amp;#x662F;&amp;#x6211;&amp;#x4EEC;&amp;#x5E38;&amp;#x7528;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4E4B;&amp;#x4E00;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;">
 <meta name="keywords" content="@ModelAttribute">
 <meta property="og:type" content="article">
 <meta property="og:title" content="@ModelAttribute的总结">
 <meta property="og:url" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/index.html">
 <meta property="og:site_name" content="日积月累">
-<meta property="og:description" content="&amp;#x201C;@ModelAttribute&amp;#x201D;&amp;#x662F;&amp;#x6211;&amp;#x4EEC;&amp;#x5E38;&amp;#x7528;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4E4B;&amp;#x4E00;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;">
+<meta property="og:description" content="&amp;#x2018;@ModelAttribute&amp;#x2019;&amp;#x662F;&amp;#x6211;&amp;#x4EEC;&amp;#x5E38;&amp;#x7528;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4E4B;&amp;#x4E00;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/tu4.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/tu1.png">
@@ -24,10 +24,10 @@
 <meta property="og:image" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/tu6.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/tu7.png">
 <meta property="og:image" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/tu8.png">
-<meta property="og:updated_time" content="2019-09-25T08:29:09.048Z">
+<meta property="og:updated_time" content="2019-09-25T11:34:43.173Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="@ModelAttribute的总结">
-<meta name="twitter:description" content="&amp;#x201C;@ModelAttribute&amp;#x201D;&amp;#x662F;&amp;#x6211;&amp;#x4EEC;&amp;#x5E38;&amp;#x7528;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4E4B;&amp;#x4E00;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;">
+<meta name="twitter:description" content="&amp;#x2018;@ModelAttribute&amp;#x2019;&amp;#x662F;&amp;#x6211;&amp;#x4EEC;&amp;#x5E38;&amp;#x7528;&amp;#x7684;&amp;#x6CE8;&amp;#x89E3;&amp;#x4E4B;&amp;#x4E00;&amp;#xFF0C;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x6211;&amp;#x603B;&amp;#x7ED3;&amp;#x4E00;&amp;#x4E0B;">
 <meta name="twitter:image" content="http://yoursite.com/2019/09/25/ModelAttribute的总结/tu4.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
@@ -190,7 +190,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="&#x201C;-ModelAttribute&#x201D;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;"><a href="#&#x201C;-ModelAttribute&#x201D;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;" class="headerlink" title="&#x201C;@ModelAttribute&#x201D;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;"></a>&#x201C;@ModelAttribute&#x201D;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;</h4><a id="more"></a>
+        <h4 id="&#x2018;-ModelAttribute&#x2019;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;"><a href="#&#x2018;-ModelAttribute&#x2019;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;" class="headerlink" title="&#x2018;@ModelAttribute&#x2019;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;"></a>&#x2018;@ModelAttribute&#x2019;&#x662F;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;&#x6CE8;&#x89E3;&#x4E4B;&#x4E00;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;</h4><a id="more"></a>
 
 <p>&#x201C;@ModelAttribute&#x201D;&#x53EF;&#x4EE5;&#x7528;&#x5728;&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x3002;<br>&#x4F8B;&#x5982;&#xFF1A;<br>&#x6211;&#x7684;user&#x5B9E;&#x4F53;&#x7C7B;&#xFF1A;<br><img src="/2019/09/25/ModelAttribute&#x7684;&#x603B;&#x7ED3;/tu4.png" alt="img"></p>
 <p>&#x6211;&#x7684;jsp&#x9875;&#x9762;&#xFF1A;<br><img src="/2019/09/25/ModelAttribute&#x7684;&#x603B;&#x7ED3;/tu1.png" alt="img"></p>
@@ -347,7 +347,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#“-ModelAttribute”是我们常用的注解之一，在这里我总结一下"><span class="toc-number">1.</span> <span class="toc-text">“@ModelAttribute”是我们常用的注解之一，在这里我总结一下</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意，我们不写-ModelAttribute注解也是可以的，因为我们controller里面用的是return，相当于一次转发，"><span class="toc-number"></span> <span class="toc-text">注意，我们不写@ModelAttribute注解也是可以的，因为我们controller里面用的是return，相当于一次转发，</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转发的话是在同一个request请求中，参数数据不会丢失，所以即使不写-ModelAttribute也是可以的，但是含义不一样，"><span class="toc-number"></span> <span class="toc-text">转发的话是在同一个request请求中，参数数据不会丢失，所以即使不写@ModelAttribute也是可以的，但是含义不一样，</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写-ModelAttribute的话数据放到model中，不写的话放到request中。"><span class="toc-number"></span> <span class="toc-text">写@ModelAttribute的话数据放到model中，不写的话放到request中。</span></a>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#‘-ModelAttribute’是我们常用的注解之一，在这里我总结一下"><span class="toc-number">1.</span> <span class="toc-text">‘@ModelAttribute’是我们常用的注解之一，在这里我总结一下</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意，我们不写-ModelAttribute注解也是可以的，因为我们controller里面用的是return，相当于一次转发，"><span class="toc-number"></span> <span class="toc-text">注意，我们不写@ModelAttribute注解也是可以的，因为我们controller里面用的是return，相当于一次转发，</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#转发的话是在同一个request请求中，参数数据不会丢失，所以即使不写-ModelAttribute也是可以的，但是含义不一样，"><span class="toc-number"></span> <span class="toc-text">转发的话是在同一个request请求中，参数数据不会丢失，所以即使不写@ModelAttribute也是可以的，但是含义不一样，</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写-ModelAttribute的话数据放到model中，不写的话放到request中。"><span class="toc-number"></span> <span class="toc-text">写@ModelAttribute的话数据放到model中，不写的话放到request中。</span></a>
                     </div>
                 </span>
             </div>
@@ -500,15 +500,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">data</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">
