@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>单链表面试题（day3） | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x9">
+  <meta name="description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x970">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单链表面试题（day3）">
 <meta property="og:url" content="http://yoursite.com/2019/10/26/单链表面试题/index.html">
 <meta property="og:site_name" content="日积月累">
-<meta property="og:description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x9">
+<meta property="og:description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x970">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/10/26/单链表面试题/1.png">
-<meta property="og:updated_time" content="2019-10-26T06:42:35.235Z">
+<meta property="og:updated_time" content="2019-10-26T06:44:02.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单链表面试题（day3）">
-<meta name="twitter:description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x9">
+<meta name="twitter:description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x970">
 <meta name="twitter:image" content="http://yoursite.com/2019/10/26/单链表面试题/1.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
@@ -183,9 +183,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-
-<h3 id="1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;-&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;"><a href="#1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;-&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;" class="headerlink" title="1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;(&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;)"></a>1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;(&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public int getLinkLength(heronode head) {</span><br><span class="line">    heronode temp = head;</span><br><span class="line">    if (temp.next == null) {</span><br><span class="line">        return 0;</span><br><span class="line">    }else {</span><br><span class="line">        int length=0;</span><br><span class="line">        heronode heronode=temp.next; //&#x5934;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5305;&#x62EC;&#x5934;&#x7ED3;&#x70B9;</span><br><span class="line">        while (heronode!=null){</span><br><span class="line">            length++;</span><br><span class="line">            heronode=heronode.next;</span><br><span class="line">        }</span><br><span class="line">        return length;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+        <h3 id="1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;-&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;"><a href="#1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;-&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;" class="headerlink" title="1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;(&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;)"></a>1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;(&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;)</h3><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public int getLinkLength(heronode head) {</span><br><span class="line">    heronode temp = head;</span><br><span class="line">    if (temp.next == null) {</span><br><span class="line">        return 0;</span><br><span class="line">    }else {</span><br><span class="line">        int length=0;</span><br><span class="line">        heronode heronode=temp.next; //&#x5934;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5305;&#x62EC;&#x5934;&#x7ED3;&#x70B9;</span><br><span class="line">        while (heronode!=null){</span><br><span class="line">            length++;</span><br><span class="line">            heronode=heronode.next;</span><br><span class="line">        }</span><br><span class="line">        return length;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
 <h3 id="2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;"><a href="#2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;" class="headerlink" title="2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;"></a>2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> //&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x5012;&#x6570;&#x7B2C;index&#x4E2A;&#x6570;&#x636E;&#xFF1A;</span><br><span class="line"> //&#x601D;&#x8DEF;&#xFF1A;&#x5148;&#x5F97;&#x5230;&#x94FE;&#x8868;&#x603B;&#x7684;&#x6570;&#x636E;&#x6709;&#x6548;&#x957F;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6709;&#x6548;&#x957F;&#x5EA6;-index&#x5373;&#x53EF;&#x5F97;&#x5230;&#x8282;&#x70B9;</span><br><span class="line">    public heronode getHeronode(heronode head,int index){</span><br><span class="line">        if (head.next==null){</span><br><span class="line">            return null;</span><br><span class="line">        }else {</span><br><span class="line">            heronode temp=head;</span><br><span class="line">            int size=getLinkLength(head);</span><br><span class="line">            if (index&lt;=0 || index&gt;size){</span><br><span class="line">                System.out.println(&quot;&#x4E0B;&#x6807;&#x8D8A;&#x754C;&#xFF01;&quot;);</span><br><span class="line">            }else {</span><br><span class="line">                for (int i=0;i&lt;=size-index;i++){//for&#x5FAA;&#x73AF;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x904D;&#x5386;&#x6B21;&#x6570;</span><br><span class="line">                    temp=temp.next;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        return temp;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
@@ -510,6 +509,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">支付宝</a>
               </li>
              
@@ -523,14 +530,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
