@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | 日积月累</title>
+  <title>单链表面试题（day3） | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="日积月累">
-<meta property="og:url" content="http://yoursite.com/archives/2019/page/2/index.html">
+  <meta name="description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x9">
+<meta name="keywords" content="数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="单链表面试题（day3）">
+<meta property="og:url" content="http://yoursite.com/2019/10/26/单链表面试题/index.html">
 <meta property="og:site_name" content="日积月累">
+<meta property="og:description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x9">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2019/10/26/单链表面试题/1.png">
+<meta property="og:updated_time" content="2019-10-26T06:42:35.235Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日积月累">
+<meta name="twitter:title" content="单链表面试题（day3）">
+<meta name="twitter:description" content="1&amp;#x3001;&amp;#x83B7;&amp;#x53D6;&amp;#x5230;&amp;#x5355;&amp;#x94FE;&amp;#x8868;&amp;#x7684;&amp;#x8282;&amp;#x70B9;&amp;#x7684;&amp;#x4E2A;&amp;#x6570;(&amp;#x5982;&amp;#x679C;&amp;#x662F;&amp;#x5E26;&amp;#x5934;&amp;#x7ED3;&amp;#x70B9;&amp;#x7684;&amp;#x94FE;&amp;#x8868;&amp;#xFF0C;&amp;#x9">
+<meta name="twitter:image" content="http://yoursite.com/2019/10/26/单链表面试题/1.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -150,348 +157,224 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-单链表面试题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      单链表面试题（day3）
+    </h1>
+  
+
+        
+         
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/10/26/单链表面试题/" class="archive-article-date">
+  	<time datetime="2019-10-26T06:38:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-26</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+
+<h3 id="1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;-&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;"><a href="#1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;-&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;" class="headerlink" title="1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;(&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;)"></a>1&#x3001;&#x83B7;&#x53D6;&#x5230;&#x5355;&#x94FE;&#x8868;&#x7684;&#x8282;&#x70B9;&#x7684;&#x4E2A;&#x6570;(&#x5982;&#x679C;&#x662F;&#x5E26;&#x5934;&#x7ED3;&#x70B9;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x9700;&#x6C42;&#x4E0D;&#x7EDF;&#x8BA1;&#x5934;&#x8282;&#x70B9;)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public int getLinkLength(heronode head) {</span><br><span class="line">    heronode temp = head;</span><br><span class="line">    if (temp.next == null) {</span><br><span class="line">        return 0;</span><br><span class="line">    }else {</span><br><span class="line">        int length=0;</span><br><span class="line">        heronode heronode=temp.next; //&#x5934;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5305;&#x62EC;&#x5934;&#x7ED3;&#x70B9;</span><br><span class="line">        while (heronode!=null){</span><br><span class="line">            length++;</span><br><span class="line">            heronode=heronode.next;</span><br><span class="line">        }</span><br><span class="line">        return length;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+<h3 id="2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;"><a href="#2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;" class="headerlink" title="2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;"></a>2&#x3001;&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x5012;&#x6570;&#x7B2C;n&#x4E2A;&#x8282;&#x70B9;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> //&#x83B7;&#x5F97;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x5012;&#x6570;&#x7B2C;index&#x4E2A;&#x6570;&#x636E;&#xFF1A;</span><br><span class="line"> //&#x601D;&#x8DEF;&#xFF1A;&#x5148;&#x5F97;&#x5230;&#x94FE;&#x8868;&#x603B;&#x7684;&#x6570;&#x636E;&#x6709;&#x6548;&#x957F;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6709;&#x6548;&#x957F;&#x5EA6;-index&#x5373;&#x53EF;&#x5F97;&#x5230;&#x8282;&#x70B9;</span><br><span class="line">    public heronode getHeronode(heronode head,int index){</span><br><span class="line">        if (head.next==null){</span><br><span class="line">            return null;</span><br><span class="line">        }else {</span><br><span class="line">            heronode temp=head;</span><br><span class="line">            int size=getLinkLength(head);</span><br><span class="line">            if (index&lt;=0 || index&gt;size){</span><br><span class="line">                System.out.println(&quot;&#x4E0B;&#x6807;&#x8D8A;&#x754C;&#xFF01;&quot;);</span><br><span class="line">            }else {</span><br><span class="line">                for (int i=0;i&lt;=size-index;i++){//for&#x5FAA;&#x73AF;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x904D;&#x5386;&#x6B21;&#x6570;</span><br><span class="line">                    temp=temp.next;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        return temp;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+<h3 id="3&#x3001;&#x5355;&#x94FE;&#x8868;&#x4EE3;&#x7801;&#x7684;&#x53CD;&#x8F6C;"><a href="#3&#x3001;&#x5355;&#x94FE;&#x8868;&#x4EE3;&#x7801;&#x7684;&#x53CD;&#x8F6C;" class="headerlink" title="3&#x3001;&#x5355;&#x94FE;&#x8868;&#x4EE3;&#x7801;&#x7684;&#x53CD;&#x8F6C;"></a>3&#x3001;&#x5355;&#x94FE;&#x8868;&#x4EE3;&#x7801;&#x7684;&#x53CD;&#x8F6C;</h3><p>&#x601D;&#x8DEF;:<br>1.&#x5148;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8282;&#x70B9;reverseHead =new HeroNode();<br>2.&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x904D;&#x5386;&#x539F;&#x6765;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x6BCF;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x5C31;&#x5C06;&#x5176;&#x53D6;&#x51FA;&#xFF0C;&#x5E76;&#x653E;&#x5728;&#x65B0;&#x7684;&#x94FE;&#x8868;reverseHead&#x7684;&#x6700;&#x524D;&#x7AEF;.<br>3.&#x539F;&#x6765;&#x7684;&#x94FE;&#x8868;&#x7684;head.next =reverseHead.next<br><img src="/2019/10/26/&#x5355;&#x94FE;&#x8868;&#x9762;&#x8BD5;&#x9898;/1.png" alt="img"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//&#x5355;&#x5411;&#x94FE;&#x8868;&#x7684;&#x53CD;&#x8F6C;</span><br><span class="line">public void fanzhuan(heronode head){</span><br><span class="line">    if (head.next==null || head.next.next==null){</span><br><span class="line">        return ;</span><br><span class="line">    }else {</span><br><span class="line">        heronode temp=head.next;//&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x8F85;&#x52A9;&#x7684;&#x6307;&#x9488;(&#x53D8;&#x91CF;)&#xFF0C;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x904D;&#x5386;&#x539F;&#x6765;&#x7684;&#x94FE;&#x8868;</span><br><span class="line">        heronode next=temp.next;//&#x6307;&#x5411;&#x5F53;&#x524D;&#x8282;&#x70B9;[cur]&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span><br><span class="line">        heronode reverseHead=new heronode(0,&quot;&quot;,&quot;&quot;);</span><br><span class="line">        //&#x904D;&#x5386;&#x539F;&#x6765;&#x7684;&#x94FE;&#x8868;&#xFF0C;&#x6BCF;&#x904D;&#x5386;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x5C31;&#x5C06;&#x5176;&#x53D6;&#x51FA;&#xFF0C;&#x5E76;&#x653E;&#x5728;&#x65B0;&#x7684;&#x94FE;&#x8868;reverseHead&#x7684;&#x6700;&#x524D;&#x7AEF;</span><br><span class="line">        while (temp!=null){</span><br><span class="line">            next=temp.next;//&#x5148;&#x6682;&#x65F6;&#x4FDD;&#x5B58;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x56E0;&#x4E3A;&#x540E;&#x9762;&#x9700;&#x8981;&#x4F7F;&#x7528;</span><br><span class="line">            temp.next=reverseHead.next; /&#x5C06;temp&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x6307;&#x5411;&#x65B0;&#x7684;&#x94FE;&#x8868;&#x7684;&#x6700;&#x524D;&#x7AEF;,&#x7528;&#x4E8E;&#x8FDE;&#x63A5;&#x540E;&#x9762;&#x7684;&#x5404;&#x4E2A;&#x8282;&#x70B9;</span><br><span class="line">            reverseHead.next=temp;//&#x65B0;&#x7684;&#x94FE;&#x8868;&#x7684;&#x5F00;&#x5934;&#x6C38;&#x8FDC;&#x8FDE;&#x63A5; &#x540E;&#x4E00;&#x4E2A;&#x8282;&#x70B9; &#x76F4;&#x5230;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x7528;&#x4E8E;&#x8FDE;&#x63A5;&#x5934;&#x90E8;&#x4E0E;&#x7B2C;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span><br><span class="line">            temp=next;</span><br><span class="line">        }</span><br><span class="line">        head.next=reverseHead.next;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+<h3 id="4&#x3001;&#x4ECE;&#x5C3E;&#x5230;&#x5934;&#x6253;&#x5370;&#x5355;&#x94FE;&#x8868;"><a href="#4&#x3001;&#x4ECE;&#x5C3E;&#x5230;&#x5934;&#x6253;&#x5370;&#x5355;&#x94FE;&#x8868;" class="headerlink" title="4&#x3001;&#x4ECE;&#x5C3E;&#x5230;&#x5934;&#x6253;&#x5370;&#x5355;&#x94FE;&#x8868;"></a>4&#x3001;&#x4ECE;&#x5C3E;&#x5230;&#x5934;&#x6253;&#x5370;&#x5355;&#x94FE;&#x8868;</h3><p>&#x601D;&#x8DEF;<br>1.&#x4E0A;&#x9762;&#x7684;&#x9898;&#x7684;&#x8981;&#x6C42;&#x5C31;&#x662F;&#x9006;&#x5E8F;&#x6253;&#x5370;&#x5355;&#x94FE;&#x8868;.<br>2.&#x65B9;&#x5F0F;1:&#x5148;&#x5C06;&#x5355;&#x94FE;&#x8868;&#x8FDB;&#x884C;&#x53CD;&#x8F6C;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x904D;&#x5386;&#x5373;&#x53EF;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x505A;&#x7684;&#x95EE;&#x9898;&#x662F;&#x4F1A;&#x7834;&#x574F;&#x539F;&#x6765;&#x7684;&#x5355;&#x94FE;&#x8868;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#xFF1B;<br>3.&#x65B9;&#x5F0F;2:&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x6808;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5C06;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x538B;&#x5165;&#x5230;&#x6808;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5229;&#x7528;&#x6808;&#x7684;&#x5148;&#x8FDB;&#x540E;&#x51FA;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#x9006;&#x5E8F;&#x6253;&#x5370;&#x7684;&#x6548;&#x679C;.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> //&#x4ECE;&#x5C3E;&#x5230;&#x5934;&#x6253;&#x5370;&#x5355;&#x94FE;&#x8868;</span><br><span class="line">    public void reversePrint(heronode head){</span><br><span class="line">        if (head.next==null){</span><br><span class="line">            return; //&#x7A7A;&#x94FE;&#x8868;&#xFF0C;&#x4E0D;&#x80FD;&#x6253;&#x5370;</span><br><span class="line">        }else {</span><br><span class="line">            //&#x521B;&#x5EFA;&#x8981;&#x7ED9;&#x4E00;&#x4E2A;&#x6808;&#xFF0C;&#x5C06;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x538B;&#x5165;&#x6808;</span><br><span class="line">            Stack&lt;heronode&gt; stack=new Stack&lt;&gt;();</span><br><span class="line">            heronode temp=head.next;</span><br><span class="line">            //&#x5C06;&#x94FE;&#x8868;&#x7684;&#x6240;&#x6709;&#x8282;&#x70B9;&#x538B;&#x5165;&#x6808;</span><br><span class="line">            while (temp!=null){</span><br><span class="line">                stack.push(temp);//&#x628A;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x538B;&#x5165;&#x6808;&#x4E2D;</span><br><span class="line">                temp=temp.next;//cur&#x540E;&#x79FB;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x538B;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;</span><br><span class="line">            }</span><br><span class="line">            while (stack.size()&gt;0){</span><br><span class="line">                System.out.println(stack.pop());//stack&#x7684;&#x7279;&#x70B9;&#x662F;&#x5148;&#x8FDB;&#x540E;&#x51FA;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>生活拮据，撰文为生！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/25/关于data时间封装的问题/" class="archive-article-date">
-  	<time datetime="2019-09-25T08:29:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/关于data时间封装的问题/">关于data时间封装的问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/26/单链表面试题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/25/ModelAttribute的总结/" class="archive-article-date">
-  	<time datetime="2019-09-25T07:56:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/26/单链表的增删改查/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">单链表的增删改查（day3）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/ModelAttribute的总结/">@ModelAttribute的总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">@ModelAttribute</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、获取到单链表的节点的个数-如果是带头结点的链表，需求不统计头节点"><span class="toc-number">1.</span> <span class="toc-text">1、获取到单链表的节点的个数(如果是带头结点的链表，需求不统计头节点)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、获得链表倒数第n个节点"><span class="toc-number">2.</span> <span class="toc-text">2、获得链表倒数第n个节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、单链表代码的反转"><span class="toc-number">3.</span> <span class="toc-text">3、单链表代码的反转</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、从尾到头打印单链表"><span class="toc-number">4.</span> <span class="toc-text">4、从尾到头打印单链表</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/24/ssm分页总结/" class="archive-article-date">
-  	<time datetime="2019-09-24T13:16:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/24/ssm分页总结/">ssm分页总结</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ssm分页</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/24/关于用沙箱版支付宝付钱的总结/" class="archive-article-date">
-  	<time datetime="2019-09-24T11:09:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/24/关于用沙箱版支付宝付钱的总结/">关于用沙箱版支付宝付钱的总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">支付宝</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/23/关于WEB-INF下的文件及文件之间调用总结/" class="archive-article-date">
-  	<time datetime="2019-09-23T04:45:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/23/关于WEB-INF下的文件及文件之间调用总结/">关于WEB-INF下的文件及文件之间调用总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">WEB-INF</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/22/利用ssm框架向数据库上传图片总结/" class="archive-article-date">
-  	<time datetime="2019-09-22T06:59:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/22/利用ssm框架向数据库上传图片总结/">利用ssm框架向数据库上传图片和文件以及文件的下载总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">上传图片</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">上传和下载文件</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/20/关于hexo-d链接github的443超时问题/" class="archive-article-date">
-  	<time datetime="2019-09-20T13:49:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/20/关于hexo-d链接github的443超时问题/">关于hexo d链接github的443超时问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/20/markdown的基本语法/" class="archive-article-date">
-  	<time datetime="2019-09-20T04:34:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/20/markdown的基本语法/">markdown的基本语法总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
+  
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NjcyNi8yMzIzNQ==">
+  <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2019/">&laquo; Prev</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span>
-    </nav>
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 
 
+  
+
+  
 
           </div>
         </div>
@@ -525,8 +408,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
