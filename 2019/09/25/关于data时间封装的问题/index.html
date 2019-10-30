@@ -8,24 +8,24 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>关于data时间封装的问题 | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#x65F6;&amp;#x95F4;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x5F88;&amp;#x5934;&amp;#x75BC;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x7ECF;&amp;#x5E38;&amp;#x5BB9;&amp;#x6613;&amp;#x51FA;&amp;#x9519;&amp;#xFF0C;&amp;#x6211;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x603B;&amp;#x7ED3;">
+  <meta name="description" content="时间是一个很头疼的问题，经常容易出错，我在这里总结一下">
 <meta name="keywords" content="data">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于data时间封装的问题">
 <meta property="og:url" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/index.html">
 <meta property="og:site_name" content="日积月累">
-<meta property="og:description" content="&amp;#x65F6;&amp;#x95F4;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x5F88;&amp;#x5934;&amp;#x75BC;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x7ECF;&amp;#x5E38;&amp;#x5BB9;&amp;#x6613;&amp;#x51FA;&amp;#x9519;&amp;#xFF0C;&amp;#x6211;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x603B;&amp;#x7ED3;">
+<meta property="og:description" content="时间是一个很头疼的问题，经常容易出错，我在这里总结一下">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/tu1.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/tu2.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/tu3.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/tu4.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/tu5.png">
+<meta property="og:image" content="http://yoursite.com/tu1.png">
+<meta property="og:image" content="http://yoursite.com/tu2.png">
+<meta property="og:image" content="http://yoursite.com/tu3.png">
+<meta property="og:image" content="http://yoursite.com/tu4.png">
+<meta property="og:image" content="http://yoursite.com/tu5.png">
 <meta property="og:updated_time" content="2019-09-25T11:34:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于data时间封装的问题">
-<meta name="twitter:description" content="&amp;#x65F6;&amp;#x95F4;&amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x5F88;&amp;#x5934;&amp;#x75BC;&amp;#x7684;&amp;#x95EE;&amp;#x9898;&amp;#xFF0C;&amp;#x7ECF;&amp;#x5E38;&amp;#x5BB9;&amp;#x6613;&amp;#x51FA;&amp;#x9519;&amp;#xFF0C;&amp;#x6211;&amp;#x5728;&amp;#x8FD9;&amp;#x91CC;&amp;#x603B;&amp;#x7ED3;">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/25/关于data时间封装的问题/tu1.png">
+<meta name="twitter:description" content="时间是一个很头疼的问题，经常容易出错，我在这里总结一下">
+<meta name="twitter:image" content="http://yoursite.com/tu1.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -187,15 +187,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="&#x65F6;&#x95F4;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x5934;&#x75BC;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7ECF;&#x5E38;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;"><a href="#&#x65F6;&#x95F4;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x5934;&#x75BC;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7ECF;&#x5E38;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;" class="headerlink" title="&#x65F6;&#x95F4;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x5934;&#x75BC;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7ECF;&#x5E38;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;"></a>&#x65F6;&#x95F4;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x5934;&#x75BC;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7ECF;&#x5E38;&#x5BB9;&#x6613;&#x51FA;&#x9519;&#xFF0C;&#x6211;&#x5728;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;</h3><a id="more"></a>
+        <h3 id="时间是一个很头疼的问题，经常容易出错，我在这里总结一下"><a href="#时间是一个很头疼的问题，经常容易出错，我在这里总结一下" class="headerlink" title="时间是一个很头疼的问题，经常容易出错，我在这里总结一下"></a>时间是一个很头疼的问题，经常容易出错，我在这里总结一下</h3><a id="more"></a>
 
-<p>&#x6211;&#x7684;&#x524D;&#x53F0;jsp&#x4E2D;&#x6709;&#x4E00;&#x4E2A;data&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF1A;<br><img src="/2019/09/25/&#x5173;&#x4E8E;data&#x65F6;&#x95F4;&#x5C01;&#x88C5;&#x7684;&#x95EE;&#x9898;/tu1.png" alt="img"></p>
-<p>&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x6709;&#x4E2A;data&#x7C7B;&#x578B;&#x7684;&#x5C5E;&#x6027;&#x4E0E;&#x4E4B;&#x5BF9;&#x5E94;&#xFF1A;<br><img src="/2019/09/25/&#x5173;&#x4E8E;data&#x65F6;&#x95F4;&#x5C01;&#x88C5;&#x7684;&#x95EE;&#x9898;/tu2.png" alt="img"></p>
-<p>&#x4F46;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x7684;&#x65F6;&#x5019;&#x51FA;&#x9519;&#xFF1A;<br><img src="/2019/09/25/&#x5173;&#x4E8E;data&#x65F6;&#x95F4;&#x5C01;&#x88C5;&#x7684;&#x95EE;&#x9898;/tu3.png" alt="img"></p>
-<h3 id="&#x51FA;&#x9519;&#x539F;&#x56E0;&#x5206;&#x6790;&#xFF1A;"><a href="#&#x51FA;&#x9519;&#x539F;&#x56E0;&#x5206;&#x6790;&#xFF1A;" class="headerlink" title="&#x51FA;&#x9519;&#x539F;&#x56E0;&#x5206;&#x6790;&#xFF1A;"></a>&#x51FA;&#x9519;&#x539F;&#x56E0;&#x5206;&#x6790;&#xFF1A;</h3><p>&#x8868;&#x5355;&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#x90FD;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;integer&#x53EF;&#x4EE5;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x6210;data&#x7C7B;&#x578B;&#xFF0C;&#x6240;&#x4EE5;&#x62A5;400&#x7684;&#x9519;&#x3002;</p>
-<h3 id="&#x89E3;&#x51B3;&#x529E;&#x6CD5;1&#xFF1A;"><a href="#&#x89E3;&#x51B3;&#x529E;&#x6CD5;1&#xFF1A;" class="headerlink" title="&#x89E3;&#x51B3;&#x529E;&#x6CD5;1&#xFF1A;"></a>&#x89E3;&#x51B3;&#x529E;&#x6CD5;1&#xFF1A;</h3><p>&#x52A0;&#x4E0A; @DateTimeFormat&#x6CE8;&#x89E3;&#xFF1A;<br><img src="/2019/09/25/&#x5173;&#x4E8E;data&#x65F6;&#x95F4;&#x5C01;&#x88C5;&#x7684;&#x95EE;&#x9898;/tu4.png" alt="img"></p>
-<h3 id="&#x89E3;&#x51B3;&#x529E;&#x6CD5;2&#xFF1A;"><a href="#&#x89E3;&#x51B3;&#x529E;&#x6CD5;2&#xFF1A;" class="headerlink" title="&#x89E3;&#x51B3;&#x529E;&#x6CD5;2&#xFF1A;"></a>&#x89E3;&#x51B3;&#x529E;&#x6CD5;2&#xFF1A;</h3><p>&#x4F7F;&#x7528;&#xFF1A; SimpleDateFormat<br><img src="/2019/09/25/&#x5173;&#x4E8E;data&#x65F6;&#x95F4;&#x5C01;&#x88C5;&#x7684;&#x95EE;&#x9898;/tu5.png" alt="img"></p>
-<h2 id="&#x5176;&#x4E2D;&#xFF1A;-simpleDateFormat-parse-&#x201C;&#x201D;-&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;Date&#x7C7B;&#x578B;&#xFF1B;"><a href="#&#x5176;&#x4E2D;&#xFF1A;-simpleDateFormat-parse-&#x201C;&#x201D;-&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;Date&#x7C7B;&#x578B;&#xFF1B;" class="headerlink" title="&#x5176;&#x4E2D;&#xFF1A; simpleDateFormat.parse(&#x201C;&#x201D;)&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;Date&#x7C7B;&#x578B;&#xFF1B;"></a>&#x5176;&#x4E2D;&#xFF1A; simpleDateFormat.parse(&#x201C;&#x201D;)&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;Date&#x7C7B;&#x578B;&#xFF1B;</h2><h2 id="simpleDateFormat-format-&#x662F;&#x5C06;Date&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x3002;"><a href="#simpleDateFormat-format-&#x662F;&#x5C06;Date&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x3002;" class="headerlink" title="simpleDateFormat.format()&#x662F;&#x5C06;Date&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x3002;"></a>simpleDateFormat.format()&#x662F;&#x5C06;Date&#x7C7B;&#x578B;&#x8F6C;&#x5316;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x7C7B;&#x578B;&#x3002;</h2>
+<p>我的前台jsp中有一个data类型的数据：<br><img src="/tu1.png" alt="img"></p>
+<p>实体类中有个data类型的属性与之对应：<br><img src="/tu2.png" alt="img"></p>
+<p>但提交表单的时候出错：<br><img src="/tu3.png" alt="img"></p>
+<h3 id="出错原因分析："><a href="#出错原因分析：" class="headerlink" title="出错原因分析："></a>出错原因分析：</h3><p>表单提交的数据都是字符串类型，字符串转换成integer可以，但是不会自动转换成data类型，所以报400的错。</p>
+<h3 id="解决办法1："><a href="#解决办法1：" class="headerlink" title="解决办法1："></a>解决办法1：</h3><p>加上 @DateTimeFormat注解：<br><img src="/tu4.png" alt="img"></p>
+<h3 id="解决办法2："><a href="#解决办法2：" class="headerlink" title="解决办法2："></a>解决办法2：</h3><p>使用： SimpleDateFormat<br><img src="/tu5.png" alt="img"></p>
+<h2 id="其中：-simpleDateFormat-parse-“”-是将字符串类型转化成Date类型；"><a href="#其中：-simpleDateFormat-parse-“”-是将字符串类型转化成Date类型；" class="headerlink" title="其中： simpleDateFormat.parse(“”)是将字符串类型转化成Date类型；"></a>其中： simpleDateFormat.parse(“”)是将字符串类型转化成Date类型；</h2><h2 id="simpleDateFormat-format-是将Date类型转化成字符串类型。"><a href="#simpleDateFormat-format-是将Date类型转化成字符串类型。" class="headerlink" title="simpleDateFormat.format()是将Date类型转化成字符串类型。"></a>simpleDateFormat.format()是将Date类型转化成字符串类型。</h2>
       
 
       
@@ -495,15 +495,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">char</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -515,11 +515,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">内网映射</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -532,10 +540,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">

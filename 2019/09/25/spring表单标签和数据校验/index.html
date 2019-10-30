@@ -8,29 +8,29 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>spring表单标签和数据校验 | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="spring&amp;#x8868;&amp;#x5355;&amp;#x6807;&amp;#x7B7E;">
+  <meta name="description" content="spring表单标签">
 <meta name="keywords" content="spring表单标签,JSR303数据校验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="spring表单标签和数据校验">
 <meta property="og:url" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/index.html">
 <meta property="og:site_name" content="日积月累">
-<meta property="og:description" content="spring&amp;#x8868;&amp;#x5355;&amp;#x6807;&amp;#x7B7E;">
+<meta property="og:description" content="spring表单标签">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu2.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu3.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu4.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu5.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu6.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu7.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu8.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu9.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu11.png">
-<meta property="og:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu12.png">
+<meta property="og:image" content="http://yoursite.com/tu2.png">
+<meta property="og:image" content="http://yoursite.com/tu3.png">
+<meta property="og:image" content="http://yoursite.com/tu4.png">
+<meta property="og:image" content="http://yoursite.com/tu5.png">
+<meta property="og:image" content="http://yoursite.com/tu6.png">
+<meta property="og:image" content="http://yoursite.com/tu7.png">
+<meta property="og:image" content="http://yoursite.com/tu8.png">
+<meta property="og:image" content="http://yoursite.com/tu9.png">
+<meta property="og:image" content="http://yoursite.com/tu11.png">
+<meta property="og:image" content="http://yoursite.com/tu12.png">
 <meta property="og:updated_time" content="2019-09-25T13:24:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring表单标签和数据校验">
-<meta name="twitter:description" content="spring&amp;#x8868;&amp;#x5355;&amp;#x6807;&amp;#x7B7E;">
-<meta name="twitter:image" content="http://yoursite.com/2019/09/25/spring表单标签和数据校验/tu2.png">
+<meta name="twitter:description" content="spring表单标签">
+<meta name="twitter:image" content="http://yoursite.com/tu2.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -192,53 +192,53 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="spring&#x8868;&#x5355;&#x6807;&#x7B7E;"><a href="#spring&#x8868;&#x5355;&#x6807;&#x7B7E;" class="headerlink" title="spring&#x8868;&#x5355;&#x6807;&#x7B7E;"></a>spring&#x8868;&#x5355;&#x6807;&#x7B7E;</h3><a id="more"></a>
+        <h3 id="spring表单标签"><a href="#spring表单标签" class="headerlink" title="spring表单标签"></a>spring表单标签</h3><a id="more"></a>
 
 <ul>
-<li><p>spring&#x8868;&#x5355;&#x6807;&#x7B7E;</p>
+<li><p>spring表单标签</p>
 <ol>
-<li>spring&#x63D0;&#x4F9B;&#x7684;&#x8F7B;&#x91CF;&#x7EA7;&#x6807;&#x7B7E;&#x5E93;</li>
-<li>&#x53EF;&#x4EE5;&#x5728;jsp&#x9875;&#x9762;&#x4E2D;&#x6E32;&#x67D3;HTML&#x5143;&#x7D20;&#x6807;&#x7B7E;</li>
+<li>spring提供的轻量级标签库</li>
+<li>可以在jsp页面中渲染HTML元素标签</li>
 </ol>
 </li>
-<li><p>&#x7528;&#x6CD5;</p>
+<li><p>用法</p>
 <ul>
-<li>&#x5FC5;&#x987B;&#x5728;jsp&#x9875;&#x9762;&#x7684;&#x5F00;&#x5934;&#x5904;&#x58F0;&#x660E;taglib&#x547D;&#x4EE4;:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=&quot;form&quot; uri=&quot;http://www.springframework.org/tags/form&quot; %&gt;</span><br></pre></td></tr></table></figure>
+<li>必须在jsp页面的开头处声明taglib命令:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib prefix=&quot;form&quot; uri=&quot;http://www.springframework.org/tags/form&quot; %&gt;</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 <ul>
-<li>&#x5F15;&#x5165;&#x6807;&#x7B7E;&#x58F0;&#x660E;&#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x4E86;&#x3002;</li>
-<li>spring&#x5E38;&#x7528;&#x8868;&#x5355;&#x6807;&#x7B7E;&#xFF1A;<br><a href="form:form/" target="_blank" rel="noopener">form:form/</a>             :&#x6E32;&#x67D3;&#x8868;&#x5355;&#x5143;&#x7D20;&#xFF0C;&#x5373;<code>&lt;form&gt;/&lt;form&gt;</code><br><a href="form:input/" target="_blank" rel="noopener">form:input/</a>            :&#x76F8;&#x5F53;&#x4E8E;<code>&lt;input type=&quot;text&quot;&gt;</code><br><a href="form:password/" target="_blank" rel="noopener">form:password/</a>         :&#x76F8;&#x5F53;&#x4E8E;<code>&lt;input type=&quot;password&quot;&gt;</code><br><a href="form:hidden/" target="_blank" rel="noopener">form:hidden/</a>           :&#x76F8;&#x5F53;&#x4E8E;<code>&lt;input type=&quot;hidden&quot;&gt;</code><br><a href="form:textarea/" target="_blank" rel="noopener">form:textarea/</a>         :&#x591A;&#x884C;&#x8F93;&#x5165;&#x6846;<br><a href="form:radiobutton/" target="_blank" rel="noopener">form:radiobutton/</a>      :&#x5355;&#x9009;&#x6846;<br><a href="form:checkbox/" target="_blank" rel="noopener">form:checkbox/</a>         &#xFF1A;&#x590D;&#x9009;&#x6846;<br><a href="form:select/" target="_blank" rel="noopener">form:select/</a>           &#xFF1A;&#x4E0B;&#x62C9;&#x5217;&#x8868;<br><a href="form:error/" target="_blank" rel="noopener">form:error/</a>            &#xFF1A;&#x663E;&#x793A;&#x8868;&#x5355;&#x6821;&#x9A8C;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</li>
+<li>引入标签声明之后就可以使用spring表单标签了。</li>
+<li>spring常用表单标签：<br><a href="form:form/" target="_blank" rel="noopener">form:form/</a>             :渲染表单元素，即<code>&lt;form&gt;/&lt;form&gt;</code><br><a href="form:input/" target="_blank" rel="noopener">form:input/</a>            :相当于<code>&lt;input type=&quot;text&quot;&gt;</code><br><a href="form:password/" target="_blank" rel="noopener">form:password/</a>         :相当于<code>&lt;input type=&quot;password&quot;&gt;</code><br><a href="form:hidden/" target="_blank" rel="noopener">form:hidden/</a>           :相当于<code>&lt;input type=&quot;hidden&quot;&gt;</code><br><a href="form:textarea/" target="_blank" rel="noopener">form:textarea/</a>         :多行输入框<br><a href="form:radiobutton/" target="_blank" rel="noopener">form:radiobutton/</a>      :单选框<br><a href="form:checkbox/" target="_blank" rel="noopener">form:checkbox/</a>         ：复选框<br><a href="form:select/" target="_blank" rel="noopener">form:select/</a>           ：下拉列表<br><a href="form:error/" target="_blank" rel="noopener">form:error/</a>            ：显示表单校验错误信息</li>
 </ul>
 </li>
 </ul>
-<h5 id="&#x90E8;&#x5206;&#x8868;&#x5355;&#x6807;&#x7B7E;&#x7B80;&#x4ECB;"><a href="#&#x90E8;&#x5206;&#x8868;&#x5355;&#x6807;&#x7B7E;&#x7B80;&#x4ECB;" class="headerlink" title="&#x90E8;&#x5206;&#x8868;&#x5355;&#x6807;&#x7B7E;&#x7B80;&#x4ECB;"></a>&#x90E8;&#x5206;&#x8868;&#x5355;&#x6807;&#x7B7E;&#x7B80;&#x4ECB;</h5><ul>
-<li><a href="form:form/" target="_blank" rel="noopener">form:form/</a> &#x6807;&#x7B7E;<ul>
-<li>modelAttribute&#xFF1A;&#x6307;&#x5B9A;&#x7ED1;&#x5B9A;&#x5F97;&#x6A21;&#x578B;&#x5C5E;&#x6027;&#xFF0C;&#x5FC5;&#x987B;&#x5199;&#xFF0C;&#x4E0D;&#x5199;&#x4F1A;&#x62A5;&#x9519;(&#x9ED8;&#x8BA4;&#x4E3A;command)</li>
-<li>action&#xFF1A;&#x8DF3;&#x8F6C;&#x7684;url</li>
-<li>method: get &#x3001;post</li>
+<h5 id="部分表单标签简介"><a href="#部分表单标签简介" class="headerlink" title="部分表单标签简介"></a>部分表单标签简介</h5><ul>
+<li><a href="form:form/" target="_blank" rel="noopener">form:form/</a> 标签<ul>
+<li>modelAttribute：指定绑定得模型属性，必须写，不写会报错(默认为command)</li>
+<li>action：跳转的url</li>
+<li>method: get 、post</li>
 </ul>
 </li>
-<li><a href="form:input/" target="_blank" rel="noopener">form:input/</a> &#x6807;&#x7B7E;<ul>
-<li>path:&#x5373;<code>&lt;input name=&quot;&quot;/&gt;</code>&#x4E2D;&#x7684;name</li>
-<li>cssStyle:&#x5B9A;&#x4E49;css&#x6837;&#x5F0F;</li>
-<li>cssClass:&#x5B9A;&#x4E49;css&#x7684;&#x7C7B;&#x540D;</li>
+<li><a href="form:input/" target="_blank" rel="noopener">form:input/</a> 标签<ul>
+<li>path:即<code>&lt;input name=&quot;&quot;/&gt;</code>中的name</li>
+<li>cssStyle:定义css样式</li>
+<li>cssClass:定义css的类名</li>
 </ul>
 </li>
 </ul>
-<h4 id="&#x4EE3;&#x7801;&#x6F14;&#x793A;&#xFF1A;"><a href="#&#x4EE3;&#x7801;&#x6F14;&#x793A;&#xFF1A;" class="headerlink" title="&#x4EE3;&#x7801;&#x6F14;&#x793A;&#xFF1A;"></a>&#x4EE3;&#x7801;&#x6F14;&#x793A;&#xFF1A;</h4><p>index.jsp&#xFF1A;<br><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu2.png" alt="img"><br>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;modelAttribute&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#xFF0C;&#x800C;&#x4E14;&#x6765;&#x5230;&#x8FD9;&#x4E2A;&#x754C;&#x9762;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x4E00;&#x5C42;controller&#xFF0C;&#x5F80;model<br>&#x91CC;&#x9762;&#x653E;&#x503C;&#xFF0C;&#x53EA;&#x6709;&#x8FD9;&#x6837;modelAttribute&#x624D;&#x80FD;&#x6709;&#x503C;&#x53EF;&#x5199;&#x3002;<br>&#x6211;&#x8FD9;&#x91CC;&#x7684;&#x9996;&#x9875;&#x6765;&#x5230;&#x4E86;user.jsp,&#x7136;&#x540E;&#x8DF3;&#x8F6C;&#x5230;controller&#xFF0C;&#x6700;&#x540E;&#x6765;&#x5230;index.jsp<br>user.jsp:<br><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu3.png" alt="img"></p>
-<p>controller:<br><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu4.png" alt="img"></p>
-<p>&#x6700;&#x7EC8;&#x7684;&#x6548;&#x679C;&#xFF1A;<br><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu5.png" alt="img"></p>
-<h3 id="JSR-303&#x6570;&#x636E;&#x6821;&#x9A8C;"><a href="#JSR-303&#x6570;&#x636E;&#x6821;&#x9A8C;" class="headerlink" title="JSR 303&#x6570;&#x636E;&#x6821;&#x9A8C;"></a>JSR 303&#x6570;&#x636E;&#x6821;&#x9A8C;</h3><h4 id="&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;"><a href="#&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;" class="headerlink" title="&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;"></a>&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;</h4><p>&#x5229;&#x7528;spring&#x81EA;&#x5E26;&#x7684;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x6846;&#x67B6;<br>&#x5229;&#x7528;JSR 303</p>
-<h4 id="jsr-303&#x7528;&#x4E8E;&#x5BF9;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;"><a href="#jsr-303&#x7528;&#x4E8E;&#x5BF9;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;" class="headerlink" title="jsr 303&#x7528;&#x4E8E;&#x5BF9;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;"></a>jsr 303&#x7528;&#x4E8E;&#x5BF9;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;</h4><h4 id="jsr-303&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;"><a href="#jsr-303&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;" class="headerlink" title="jsr 303&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;"></a>jsr 303&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</h4><h6 id="&#x5BFC;&#x5165;&#x4F9D;&#x8D56;&#xFF1A;"><a href="#&#x5BFC;&#x5165;&#x4F9D;&#x8D56;&#xFF1A;" class="headerlink" title="&#x5BFC;&#x5165;&#x4F9D;&#x8D56;&#xFF1A;"></a>&#x5BFC;&#x5165;&#x4F9D;&#x8D56;&#xFF1A;</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator --&gt;</span><br><span class="line">   &lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;org.hibernate&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;hibernate-validator&lt;/artifactId&gt;</span><br><span class="line">     &lt;version&gt;6.0.17.Final&lt;/version&gt;</span><br><span class="line">   &lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="代码演示："><a href="#代码演示：" class="headerlink" title="代码演示："></a>代码演示：</h4><p>index.jsp：<br><img src="/tu2.png" alt="img"><br>注意，这里的modelAttribute必须定义，而且来到这个界面之前必须经过一层controller，往model<br>里面放值，只有这样modelAttribute才能有值可写。<br>我这里的首页来到了user.jsp,然后跳转到controller，最后来到index.jsp<br>user.jsp:<br><img src="/tu3.png" alt="img"></p>
+<p>controller:<br><img src="/tu4.png" alt="img"></p>
+<p>最终的效果：<br><img src="/tu5.png" alt="img"></p>
+<h3 id="JSR-303数据校验"><a href="#JSR-303数据校验" class="headerlink" title="JSR 303数据校验"></a>JSR 303数据校验</h3><h4 id="服务器端的数据校验"><a href="#服务器端的数据校验" class="headerlink" title="服务器端的数据校验"></a>服务器端的数据校验</h4><p>利用spring自带的数据校验框架<br>利用JSR 303</p>
+<h4 id="jsr-303用于对实体类的属性进行验证。"><a href="#jsr-303用于对实体类的属性进行验证。" class="headerlink" title="jsr 303用于对实体类的属性进行验证。"></a>jsr 303用于对实体类的属性进行验证。</h4><h4 id="jsr-303的使用方法："><a href="#jsr-303的使用方法：" class="headerlink" title="jsr 303的使用方法："></a>jsr 303的使用方法：</h4><h6 id="导入依赖："><a href="#导入依赖：" class="headerlink" title="导入依赖："></a>导入依赖：</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator --&gt;</span><br><span class="line">   &lt;dependency&gt;</span><br><span class="line">     &lt;groupId&gt;org.hibernate&lt;/groupId&gt;</span><br><span class="line">     &lt;artifactId&gt;hibernate-validator&lt;/artifactId&gt;</span><br><span class="line">     &lt;version&gt;6.0.17.Final&lt;/version&gt;</span><br><span class="line">   &lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
 
-<h6 id="jsr303&#x5E38;&#x7528;&#x7EA6;&#x675F;&#xFF1A;"><a href="#jsr303&#x5E38;&#x7528;&#x7EA6;&#x675F;&#xFF1A;" class="headerlink" title="jsr303&#x5E38;&#x7528;&#x7EA6;&#x675F;&#xFF1A;"></a>jsr303&#x5E38;&#x7528;&#x7EA6;&#x675F;&#xFF1A;</h6><p><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu6.png" alt="img"></p>
-<h6 id="&#x6211;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#xFF1A;"><a href="#&#x6211;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#xFF1A;" class="headerlink" title="&#x6211;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#xFF1A;"></a>&#x6211;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#xFF1A;</h6><p><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu7.png" alt="img"></p>
-<h6 id="&#x524D;&#x53F0;jsp&#xFF1A;"><a href="#&#x524D;&#x53F0;jsp&#xFF1A;" class="headerlink" title="&#x524D;&#x53F0;jsp&#xFF1A;"></a>&#x524D;&#x53F0;jsp&#xFF1A;</h6><p><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu8.png" alt="img"></p>
-<h6 id="controller-&#x8FD9;&#x91CC;&#x7684;&#x88AB;&#x6821;&#x9A8C;&#x7684;&#x5B9E;&#x4F53;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;-Valid&#x6CE8;&#x89E3;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8FB9;&#x5339;&#x914D;&#x8FB9;&#x6821;&#x9A8C;"><a href="#controller-&#x8FD9;&#x91CC;&#x7684;&#x88AB;&#x6821;&#x9A8C;&#x7684;&#x5B9E;&#x4F53;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;-Valid&#x6CE8;&#x89E3;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8FB9;&#x5339;&#x914D;&#x8FB9;&#x6821;&#x9A8C;" class="headerlink" title="controller(&#x8FD9;&#x91CC;&#x7684;&#x88AB;&#x6821;&#x9A8C;&#x7684;&#x5B9E;&#x4F53;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;@Valid&#x6CE8;&#x89E3;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8FB9;&#x5339;&#x914D;&#x8FB9;&#x6821;&#x9A8C;):"></a>controller(&#x8FD9;&#x91CC;&#x7684;&#x88AB;&#x6821;&#x9A8C;&#x7684;&#x5B9E;&#x4F53;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;@Valid&#x6CE8;&#x89E3;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x8FB9;&#x5339;&#x914D;&#x8FB9;&#x6821;&#x9A8C;):</h6><p><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu9.png" alt="img"></p>
-<h6 id="&#x5728;&#x5B9E;&#x4F53;&#x7C7B;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;-BindingResult&#xFF08;&#x4E0D;&#x80FD;&#x9694;&#x5F00;&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x3002;"><a href="#&#x5728;&#x5B9E;&#x4F53;&#x7C7B;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x52A0;&#x4E0A;-BindingResult&#xFF08;&#x4E0D;&#x80FD;&#x9694;&#x5F00;&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x3002;" class="headerlink" title="&#x5728;&#x5B9E;&#x4F53;&#x7C7B;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x52A0;&#x4E0A; BindingResult&#xFF08;&#x4E0D;&#x80FD;&#x9694;&#x5F00;&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x3002;"></a>&#x5728;&#x5B9E;&#x4F53;&#x7C7B;&#x540E;&#x9762;&#x5FC5;&#x987B;&#x52A0;&#x4E0A; BindingResult&#xFF08;&#x4E0D;&#x80FD;&#x9694;&#x5F00;&#xFF09;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x7ED3;&#x679C;&#x3002;</h6><h6 id="&#x5728;jsp&#x9875;&#x9762;&#x663E;&#x793A;&#xFF1A;"><a href="#&#x5728;jsp&#x9875;&#x9762;&#x663E;&#x793A;&#xFF1A;" class="headerlink" title="&#x5728;jsp&#x9875;&#x9762;&#x663E;&#x793A;&#xFF1A;"></a>&#x5728;jsp&#x9875;&#x9762;&#x663E;&#x793A;&#xFF1A;</h6><p><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu11.png" alt="img"></p>
-<h6 id="&#x6548;&#x679C;&#xFF1A;"><a href="#&#x6548;&#x679C;&#xFF1A;" class="headerlink" title="&#x6548;&#x679C;&#xFF1A;"></a>&#x6548;&#x679C;&#xFF1A;</h6><p><img src="/2019/09/25/spring&#x8868;&#x5355;&#x6807;&#x7B7E;&#x548C;&#x6570;&#x636E;&#x6821;&#x9A8C;/tu12.png" alt="img"></p>
+<h6 id="jsr303常用约束："><a href="#jsr303常用约束：" class="headerlink" title="jsr303常用约束："></a>jsr303常用约束：</h6><p><img src="/tu6.png" alt="img"></p>
+<h6 id="我的实体类："><a href="#我的实体类：" class="headerlink" title="我的实体类："></a>我的实体类：</h6><p><img src="/tu7.png" alt="img"></p>
+<h6 id="前台jsp："><a href="#前台jsp：" class="headerlink" title="前台jsp："></a>前台jsp：</h6><p><img src="/tu8.png" alt="img"></p>
+<h6 id="controller-这里的被校验的实体必须加上-Valid注解，这样可以边匹配边校验"><a href="#controller-这里的被校验的实体必须加上-Valid注解，这样可以边匹配边校验" class="headerlink" title="controller(这里的被校验的实体必须加上@Valid注解，这样可以边匹配边校验):"></a>controller(这里的被校验的实体必须加上@Valid注解，这样可以边匹配边校验):</h6><p><img src="/tu9.png" alt="img"></p>
+<h6 id="在实体类后面必须加上-BindingResult（不能隔开），用于处理结果。"><a href="#在实体类后面必须加上-BindingResult（不能隔开），用于处理结果。" class="headerlink" title="在实体类后面必须加上 BindingResult（不能隔开），用于处理结果。"></a>在实体类后面必须加上 BindingResult（不能隔开），用于处理结果。</h6><h6 id="在jsp页面显示："><a href="#在jsp页面显示：" class="headerlink" title="在jsp页面显示："></a>在jsp页面显示：</h6><p><img src="/tu11.png" alt="img"></p>
+<h6 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h6><p><img src="/tu12.png" alt="img"></p>
 
       
 
@@ -543,15 +543,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">char</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -563,11 +563,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">内网映射</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -580,10 +588,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">

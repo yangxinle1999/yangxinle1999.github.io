@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>前缀、中缀、后缀表达式规则（day6） | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&amp;#x524D;&amp;#x7F00;&amp;#x8868;&amp;#x8FBE;&amp;#x5F0F;">
+  <meta name="description" content="前缀表达式">
 <meta name="keywords" content="数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前缀、中缀、后缀表达式规则（day6）">
 <meta property="og:url" content="http://yoursite.com/2019/10/29/前缀、中缀、后缀表达式规则/index.html">
 <meta property="og:site_name" content="日积月累">
-<meta property="og:description" content="&amp;#x524D;&amp;#x7F00;&amp;#x8868;&amp;#x8FBE;&amp;#x5F0F;">
+<meta property="og:description" content="前缀表达式">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://yoursite.com/2019/10/29/前缀、中缀、后缀表达式规则/1.png">
+<meta property="og:image" content="http://yoursite.com/1.png">
 <meta property="og:updated_time" content="2019-10-29T13:14:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前缀、中缀、后缀表达式规则（day6）">
-<meta name="twitter:description" content="&amp;#x524D;&amp;#x7F00;&amp;#x8868;&amp;#x8FBE;&amp;#x5F0F;">
-<meta name="twitter:image" content="http://yoursite.com/2019/10/29/前缀、中缀、后缀表达式规则/1.png">
+<meta name="twitter:description" content="前缀表达式">
+<meta name="twitter:image" content="http://yoursite.com/1.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -183,12 +183,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;"><a href="#&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;" class="headerlink" title="&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;</h3><a id="more"></a>
-<p>&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x53C8;&#x79F0;&#x4E3A;&#x6CE2;&#x5170;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x4F4D;&#x4E8E;&#x64CD;&#x4F5C;&#x6570;&#x4E4B;&#x524D;<br>&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;: (3+4)X5-6 &#x5BF9;&#x5E94;&#x7684;&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F; - x + 3 4 5 6</p>
-<h4 id="&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;"><a href="#&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;" class="headerlink" title="&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;"></a>&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;</h4><p>&#x4ECE;&#x53F3;&#x81F3;&#x5DE6;&#x626B;&#x63CF;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x9047;&#x5230;&#x6570;&#x5B57;&#x65F6;&#xFF0C;&#x5C06;&#x6570;&#x5B57;&#x538B;&#x5165;&#x5806;&#x6808;&#xFF0C;&#x9047;&#x5230;&#x8FD0;&#x7B97;&#x7B26;&#x65F6;&#xFF0C;&#x5F39;&#x51FA;&#x6808;&#x9876;&#x7684;&#x4E24;&#x4E2A;<br>&#x6570;&#xFF0C;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x5BF9;&#x5B83;&#x4EEC;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x8BA1;&#x7B97;(&#x6808;&#x9879;&#x5143;&#x7D20;&#x548C;&#x6B21;&#x9876;&#x5143;&#x7D20;)&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x5165;&#x6808;;&#x91CD;&#x590D;&#x4E0A;<br>&#x8FF0;&#x8FC7;&#x7A0B;&#x76F4;&#x5230;&#x8868;&#x8FBE;&#x5F0F;&#x6700;&#x5DE6;&#x7AEF;&#xFF0C;&#x6700;&#x540E;&#x8FD0;&#x7B97;&#x5F97;&#x51FA;&#x7684;&#x503C;&#x5373;&#x4E3A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x3002;<br>&#x4F8B;&#x5982;: (3+4)X5-6&#x5BF9;&#x5E94;&#x7684;&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F; - x + 3 4 5 6,&#x9488;&#x5BF9;&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;:<br>1)&#x4ECE;&#x53F3;&#x81F3;&#x5DE6;&#x626B;&#x63CF;&#xFF0C;&#x5C06;6&#x3001;5&#x3001;4&#x3001;3&#x538B;&#x5165;&#x5806;&#x6808;<br>2)&#x9047;&#x5230;+&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x56E0;&#x6B64;&#x5F39;&#x51FA;3&#x548C;4 (3&#x4E3A;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF0C;4&#x4E3A;&#x6B21;&#x9876;&#x5143;&#x7D20;)&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;3+4&#x7684;&#x503C;&#xFF0C;&#x5F97;7&#xFF0C;<br>&#x518D;&#x5C06;7&#x5165;&#x6808;<br>3)&#x63A5;&#x4E0B;&#x6765;&#x662F;X&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x56E0;&#x6B64;&#x5F39;&#x51FA;7&#x548C;5&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;7X5=35&#xFF0C;&#x5C06;35&#x5165;&#x6808;<br>4)&#x6700;&#x540E;&#x662F;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;35-6&#x7684;&#x503C;&#xFF0C;&#x5373;29, &#x7531;&#x6B64;&#x5F97;&#x51FA;&#x6700;&#x7EC8;&#x7ED3;&#x679C;</p>
-<h3 id="&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;"><a href="#&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;" class="headerlink" title="&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;</h3><p>1)&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F;&#x5E38;&#x89C1;&#x7684;&#x8FD0;&#x7B97;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5982;(3+4)X5-6<br>2)&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6C42;&#x503C;&#x662F;&#x6211;&#x4EEC;&#x4EBA;&#x6700;&#x719F;&#x6089;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x8BA1;&#x7B97;&#x673A;&#x6765;&#x8BF4;&#x5374;&#x4E0D;&#x597D;&#x64CD;&#x4F5C;(&#x524D;&#x9762;&#x6211;&#x4EEC;&#x8BB2;&#x7684;&#x6848;&#x4F8B;<br>&#x5C31;&#x80FD;&#x770B;&#x7684;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;)&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#x65F6;&#xFF0C;&#x5F80;&#x5F80;&#x4F1A;&#x5C06;&#x4E2D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x8F6C;&#x6210;&#x5176;&#x5B83;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x64CD;&#x4F5C;<br>(&#x4E00;&#x822C;&#x8F6C;&#x6210;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;.)</p>
-<h3 id="&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;"><a href="#&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;" class="headerlink" title="&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;"></a>&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;</h3><p>1)&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x53C8;&#x79F0;&#x9006;&#x6CE2;&#x5170;&#x8868;&#x8FBE;&#x5F0F;&#x4E0E;&#x524D;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x4F3C;&#xFF0C;&#x53EA;&#x662F;&#x8FD0;&#x7B97;&#x7B26;&#x4F4D;&#x4E8E;&#x64CD;&#x4F5C;&#x6570;&#x4E4B;&#x540E;<br>2)&#x4E2D;&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;: (3+4)X5-6 &#x5BF9;&#x5E94;&#x7684;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F;3 4 + 5 X 6 -<br>&#x518D;&#x6BD4;&#x5982;&#xFF1A;<br><img src="/2019/10/29/&#x524D;&#x7F00;&#x3001;&#x4E2D;&#x7F00;&#x3001;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x89C4;&#x5219;/1.png" alt="img"></p>
-<h4 id="&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;"><a href="#&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;" class="headerlink" title="&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;"></a>&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#x6C42;&#x503C;</h4><p>&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#x626B;&#x63CF;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x9047;&#x5230;&#x6570;&#x5B57;&#x65F6;&#xFF0C;&#x5C06;&#x6570;&#x5B57;&#x538B;&#x5165;&#x5806;&#x6808;&#xFF0C;&#x9047;&#x5230;&#x8FD0;&#x7B97;&#x7B26;&#x65F6;&#xFF0C;&#x5F39;&#x51FA;&#x6808;&#x9879;&#x7684;&#x4E24;&#x4E2A;<br>&#x6570;&#xFF0C;&#x7528;&#x8FD0;&#x7B97;&#x7B26;&#x5BF9;&#x5B83;&#x4EEC;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x8BA1;&#x7B97;(&#x6B21;&#x9879;&#x5143;&#x7D20;&#x548C;&#x6808;&#x9876;&#x5143;&#x7D20;)&#xFF0C;&#x5E76;&#x5C06;&#x7ED3;&#x679C;&#x5165;&#x6808;;&#x91CD;&#x590D;&#x4E0A;<br>&#x8FF0;&#x8FC7;&#x7A0B;&#x76F4;&#x5230;&#x8868;&#x8FBE;&#x5F0F;&#x6700;&#x53F3;&#x7AEF;&#xFF0C;&#x6700;&#x540E;&#x8FD0;&#x7B97;&#x5F97;&#x51FA;&#x7684;&#x503C;&#x5373;&#x4E3A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#x3002;<br>&#x4F8B;&#x5982;: (3+4)X5-6&#x5BF9;&#x5E94;&#x7684;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x5C31;&#x662F;3 4+ 5 X 6 -,&#x9488;&#x5BF9;&#x540E;&#x7F00;&#x8868;&#x8FBE;&#x5F0F;&#x6C42;&#x503C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;:<br>1) &#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#x626B;&#x63CF;&#xFF0C;&#x5C06;3&#x548C;4&#x538B;&#x5165;&#x5806;&#x6808;;<br>2)&#x9047;&#x5230;+&#x8FD0;&#x7B97;&#x7B26;&#xFF0C; &#x56E0;&#x6B64;&#x5F39;&#x51FA;4&#x548C;3 (4&#x4E3A;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF0C;3&#x4E3A;&#x6B21;&#x9876;&#x5143;&#x7D20;)&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;3+4&#x7684;&#x503C;&#xFF0C;&#x5F97;7&#xFF0C;&#x518D;&#x5C06;7&#x5165;<br>&#x6808;;<br>3) &#x5C06;5&#x5165;&#x6808;;<br>4)&#x63A5;&#x4E0B;&#x6765;&#x662F;X&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x56E0;&#x6B64;&#x5F39;&#x51FA;5&#x548C;7,&#x8BA1;&#x7B97;&#x51FA;7X5=35&#xFF0C;&#x5C06;35&#x5165;&#x6808;;<br>5)&#x5C06;6&#x5165;&#x6808;;<br>6) &#x6700;&#x540E;&#x662F;-&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8BA1;&#x7B97;&#x51FA;35-6&#x7684;&#x503C;&#xFF0C;&#x5373;29&#xFF0C; &#x7531;&#x6B64;&#x5F97;&#x51FA;&#x6700;&#x7EC8;&#x7ED3;&#x679C;</p>
+        <h3 id="前缀表达式"><a href="#前缀表达式" class="headerlink" title="前缀表达式"></a>前缀表达式</h3><a id="more"></a>
+<p>前缀表达式又称为波兰表达式，前缀表达式的运算符位于操作数之前<br>举例说明: (3+4)X5-6 对应的前缀表达式就是 - x + 3 4 5 6</p>
+<h4 id="前缀表达式的计算机求值"><a href="#前缀表达式的计算机求值" class="headerlink" title="前缀表达式的计算机求值"></a>前缀表达式的计算机求值</h4><p>从右至左扫描表达式，遇到数字时，将数字压入堆栈，遇到运算符时，弹出栈顶的两个<br>数，用运算符对它们做相应的计算(栈项元素和次顶元素)，并将结果入栈;重复上<br>述过程直到表达式最左端，最后运算得出的值即为表达式的结果。<br>例如: (3+4)X5-6对应的前缀表达式就是 - x + 3 4 5 6,针对前缀表达式求值步骤如下:<br>1)从右至左扫描，将6、5、4、3压入堆栈<br>2)遇到+运算符，因此弹出3和4 (3为栈顶元素，4为次顶元素)，计算出3+4的值，得7，<br>再将7入栈<br>3)接下来是X运算符，因此弹出7和5，计算出7X5=35，将35入栈<br>4)最后是运算符，计算出35-6的值，即29, 由此得出最终结果</p>
+<h3 id="中缀表达式"><a href="#中缀表达式" class="headerlink" title="中缀表达式"></a>中缀表达式</h3><p>1)中缀表达式就是常见的运算表达式，如(3+4)X5-6<br>2)中缀表达式的求值是我们人最熟悉的，但是对计算机来说却不好操作(前面我们讲的案例<br>就能看的这个问题)，因此，在计算结果时，往往会将中缀表达式转成其它表达式来操作<br>(一般转成后缀表达式.)</p>
+<h3 id="后缀表达式"><a href="#后缀表达式" class="headerlink" title="后缀表达式"></a>后缀表达式</h3><p>1)后缀表达式又称逆波兰表达式与前缀表达式相似，只是运算符位于操作数之后<br>2)中举例说明: (3+4)X5-6 对应的后缀表达式就是3 4 + 5 X 6 -<br>再比如：<br><img src="/1.png" alt="img"></p>
+<h4 id="后缀表达式的计算机求值"><a href="#后缀表达式的计算机求值" class="headerlink" title="后缀表达式的计算机求值"></a>后缀表达式的计算机求值</h4><p>从左至右扫描表达式，遇到数字时，将数字压入堆栈，遇到运算符时，弹出栈项的两个<br>数，用运算符对它们做相应的计算(次项元素和栈顶元素)，并将结果入栈;重复上<br>述过程直到表达式最右端，最后运算得出的值即为表达式的结果。<br>例如: (3+4)X5-6对应的后缀表达式就是3 4+ 5 X 6 -,针对后缀表达式求值步骤如下:<br>1) 从左至右扫描，将3和4压入堆栈;<br>2)遇到+运算符， 因此弹出4和3 (4为栈顶元素，3为次顶元素)，计算出3+4的值，得7，再将7入<br>栈;<br>3) 将5入栈;<br>4)接下来是X运算符，因此弹出5和7,计算出7X5=35，将35入栈;<br>5)将6入栈;<br>6) 最后是-运算符，计算出35-6的值，即29， 由此得出最终结果</p>
 
       
 
@@ -489,15 +489,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">char</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -509,11 +509,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">内网映射</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -526,10 +534,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
               </li>
              
               <li class="article-tag-list-item">
