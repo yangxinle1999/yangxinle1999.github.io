@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>char与int的转换问题 | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="java中int型和char型数据不像c语言中那样可以任意转换，即不可以将一个int型变量自动转换为char型，但可以将一个char型自动转换为int类型">
+  <meta name="description" content="java&amp;#x4E2D;int&amp;#x578B;&amp;#x548C;char&amp;#x578B;&amp;#x6570;&amp;#x636E;&amp;#x4E0D;&amp;#x50CF;c&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x90A3;&amp;#x6837;&amp;#x53EF;&amp;#x4EE5;&amp;#x4EFB;&amp;#x610F;&amp;#x8F6C;&amp;#x6362;&amp;#xFF0C;&amp;#x5373;&amp;#x4E0D;&amp;#x53EF;&amp;#x4">
 <meta name="keywords" content="char">
 <meta property="og:type" content="article">
 <meta property="og:title" content="char与int的转换问题">
 <meta property="og:url" content="http://yoursite.com/2019/10/28/char与int的转换问题/index.html">
 <meta property="og:site_name" content="日积月累">
-<meta property="og:description" content="java中int型和char型数据不像c语言中那样可以任意转换，即不可以将一个int型变量自动转换为char型，但可以将一个char型自动转换为int类型">
+<meta property="og:description" content="java&amp;#x4E2D;int&amp;#x578B;&amp;#x548C;char&amp;#x578B;&amp;#x6570;&amp;#x636E;&amp;#x4E0D;&amp;#x50CF;c&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x90A3;&amp;#x6837;&amp;#x53EF;&amp;#x4EE5;&amp;#x4EFB;&amp;#x610F;&amp;#x8F6C;&amp;#x6362;&amp;#xFF0C;&amp;#x5373;&amp;#x4E0D;&amp;#x53EF;&amp;#x4">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2019-10-28T04:40:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="char与int的转换问题">
-<meta name="twitter:description" content="java中int型和char型数据不像c语言中那样可以任意转换，即不可以将一个int型变量自动转换为char型，但可以将一个char型自动转换为int类型">
+<meta name="twitter:description" content="java&amp;#x4E2D;int&amp;#x578B;&amp;#x548C;char&amp;#x578B;&amp;#x6570;&amp;#x636E;&amp;#x4E0D;&amp;#x50CF;c&amp;#x8BED;&amp;#x8A00;&amp;#x4E2D;&amp;#x90A3;&amp;#x6837;&amp;#x53EF;&amp;#x4EE5;&amp;#x4EFB;&amp;#x610F;&amp;#x8F6C;&amp;#x6362;&amp;#xFF0C;&amp;#x5373;&amp;#x4E0D;&amp;#x53EF;&amp;#x4">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -181,19 +181,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>java中int型和char型数据不像c语言中那样可以任意转换，即不可以将一个int型变量自动转换为char型，但可以将一个char型自动转换为int类型</p>
+        <p>java&#x4E2D;int&#x578B;&#x548C;char&#x578B;&#x6570;&#x636E;&#x4E0D;&#x50CF;c&#x8BED;&#x8A00;&#x4E2D;&#x90A3;&#x6837;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x8F6C;&#x6362;&#xFF0C;&#x5373;&#x4E0D;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;int&#x578B;&#x53D8;&#x91CF;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x4E3A;char&#x578B;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E2A;char&#x578B;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x4E3A;int&#x7C7B;&#x578B;</p>
 <a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) &#123;</span><br><span class="line">      char a=&apos;1&apos;;</span><br><span class="line">      int b=a;</span><br><span class="line">       System.out.println(b);  //代码没问题</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args) {</span><br><span class="line">      char a=&apos;1&apos;;</span><br><span class="line">      int b=a;</span><br><span class="line">       System.out.println(b);  //&#x4EE3;&#x7801;&#x6CA1;&#x95EE;&#x9898;</span><br><span class="line">   }</span><br></pre></td></tr></table></figure>
 
-<p>上述代码的运行结果为49</p>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x4E3A;49</p>
 <hr>
-<p>但是int类型不能自动转换为char类型，因为int类型比ch优先级高，必须强制类型转换。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a=3;</span><br><span class="line">char b=(char)a;</span><br><span class="line">System.out.println(b); //代码没问题</span><br></pre></td></tr></table></figure>
+<p>&#x4F46;&#x662F;int&#x7C7B;&#x578B;&#x4E0D;&#x80FD;&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x4E3A;char&#x7C7B;&#x578B;&#xFF0C;&#x56E0;&#x4E3A;int&#x7C7B;&#x578B;&#x6BD4;ch&#x4F18;&#x5148;&#x7EA7;&#x9AD8;&#xFF0C;&#x5FC5;&#x987B;&#x5F3A;&#x5236;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x3002;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int a=3;</span><br><span class="line">char b=(char)a;</span><br><span class="line">System.out.println(b); //&#x4EE3;&#x7801;&#x6CA1;&#x95EE;&#x9898;</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">char a=777;</span><br><span class="line">int b=a;</span><br><span class="line">System.out.println(b);</span><br></pre></td></tr></table></figure>
 
-<p>上述代码没有问题，输出结果为777</p>
-<h4 id="char的取值范围是-0-65535-可以把这个范围的整数直接赋值给它。"><a href="#char的取值范围是-0-65535-可以把这个范围的整数直接赋值给它。" class="headerlink" title="char的取值范围是[0, 65535],可以把这个范围的整数直接赋值给它。"></a>char的取值范围是[0, 65535],可以把这个范围的整数直接赋值给它。</h4>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;777</p>
+<h4 id="char&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;-0-65535-&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x6574;&#x6570;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x7ED9;&#x5B83;&#x3002;"><a href="#char&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;-0-65535-&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x6574;&#x6570;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x7ED9;&#x5B83;&#x3002;" class="headerlink" title="char&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;[0, 65535],&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x6574;&#x6570;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x7ED9;&#x5B83;&#x3002;"></a>char&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;[0, 65535],&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x6574;&#x6570;&#x76F4;&#x63A5;&#x8D4B;&#x503C;&#x7ED9;&#x5B83;&#x3002;</h4>
       
 
       
@@ -485,11 +485,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">@ModelAttribute</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+                <a href="javascript:void(0)" class="js-tag color1">@ModelAttribute</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -498,6 +498,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -510,10 +514,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JSR303数据校验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
