@@ -18,7 +18,9 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://yoursite.com/2019/10/28/用栈实现综合计算器/1.png">
 <meta property="og:image" content="http://yoursite.com/2019/10/28/用栈实现综合计算器/2.png">
-<meta property="og:updated_time" content="2019-10-28T13:59:22.000Z">
+<meta property="og:image" content="http://yoursite.com/2019/10/28/用栈实现综合计算器/10.png">
+<meta property="og:image" content="http://yoursite.com/2019/10/28/用栈实现综合计算器/11.png">
+<meta property="og:updated_time" content="2019-11-02T06:14:57.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用栈实现综合计算器(day5)">
 <meta name="twitter:description" content="&amp;#x4F7F;&amp;#x7528;&amp;#x6808;&amp;#x5B8C;&amp;#x6210;&amp;#x8868;&amp;#x8FBE;&amp;#x5F0F;&amp;#x7684;&amp;#x8BA1;&amp;#x7B97;&amp;#x601D;&amp;#x8DEF;">
@@ -206,6 +208,11 @@
 <h3 id="&#x4F18;&#x5316;"><a href="#&#x4F18;&#x5316;" class="headerlink" title="&#x4F18;&#x5316;"></a>&#x4F18;&#x5316;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">else {//&#x5982;&#x679C;&#x662F;&#x6570;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x5165;&#x6570;&#x6808;</span><br><span class="line">//                numStack.push(ch-48);</span><br><span class="line">                //&#x5206;&#x6790;&#x601D;&#x8DEF;</span><br><span class="line">               //1.&#x5F53;&#x5904;&#x7406;&#x591A;&#x4F4D;&#x6570;&#x65F6;&#xFF0C;&#x4E0D;&#x80FD;&#x53D1;&#x73B0;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5C31;&#x7ACB;&#x5373;&#x5165;&#x6808;&#xFF0C;&#x56E0;&#x4E3A;&#x4ED6;&#x53EF;&#x80FD;&#x662F;&#x591A;&#x4F4D;&#x6570;</span><br><span class="line">               //2.&#x5728;&#x5904;&#x7406;&#x6570;&#xFF0C;&#x9700;&#x8981;&#x5411;expression&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x7684;index&#x540E;&#x518D;&#x770B;&#x4E00;&#x4F4D;&#xFF0C; &#x5982;&#x679C;&#x662F;&#x6570;&#x5C31;&#x8FDB;&#x884C;&#x626B;&#x63CF;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x7B26;&#x53F7;&#x624D;&#x5165;&#x6808;</span><br><span class="line">              //3.&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x5B57;&#x7B26;&#x4E32;keepNum&#xFF0C;&#x7528;&#x4E8E;&#x62FC;&#x63A5;</span><br><span class="line">              //&#x5904;&#x7406;&#x591A;&#x4F4D;&#x6570;</span><br><span class="line">                keepNum += ch;</span><br><span class="line">                //&#x5982;&#x679C;ch&#x5DF2;&#x7ECF;&#x662F;expression&#x7684;&#x6700;&#x540E;&#x4E00;&#x4F4D;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x5165;&#x6808;</span><br><span class="line">                 if (index==expression.length()-1){</span><br><span class="line">                     numStack.push(Integer.parseInt(keepNum));</span><br><span class="line">                 }</span><br><span class="line">                //&#x5224;&#x65AD;&#x4E0B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x662F;&#x4E0D;&#x8DB3;&#x6570;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6570;&#x5B57;&#xFF0C;&#x5C31;&#x7EE7;&#x7EED;&#x626B;&#x63CF;&#xFF0C;&#x5982;&#x679C;&#x8DB3;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x5165;&#x6808;</span><br><span class="line">               //&#x6CE8;&#x610F;&#x662F;&#x770B;&#x540E;&#x4E00;&#x4F4D;&#xFF0C;&#x4E0D;&#x662F;index++,index&#x672C;&#x8EAB;&#x7684;&#x503C;&#x6CA1;&#x6709;&#x53D8;</span><br><span class="line">                else {</span><br><span class="line">                    if (operStack.isOper(expression.substring(index+1,index+2).charAt(0))){</span><br><span class="line">                        //&#x5982;&#x679C;&#x540E;&#x4E00;&#x4F4D;&#x662F;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x5219;&#x5165;&#x6808;keepNum</span><br><span class="line">                        numStack.push(Integer.parseInt(keepNum));</span><br><span class="line">                        //keepNum&#x5FC5;&#x987B;&#x6E05;&#x7A7A;</span><br><span class="line">                        keepNum=&quot;&quot;;</span><br><span class="line">                    }</span><br><span class="line">                 }</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2019/10/28/&#x7528;&#x6808;&#x5B9E;&#x73B0;&#x7EFC;&#x5408;&#x8BA1;&#x7B97;&#x5668;/2.png" alt="img"></p>
+<h3 id="&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x95EE;&#x9898;&#x662F;"><a href="#&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x95EE;&#x9898;&#x662F;" class="headerlink" title="&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x95EE;&#x9898;&#x662F;"></a>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7684;&#x95EE;&#x9898;&#x662F;</h3><p>&#x540C;&#x7EA7;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;5-4*2-2&#xFF0C;&#x4ED6;&#x4F1A;&#x56E0;&#x4E3A;&#x8FD0;&#x884C;&#x987A;&#x5E8F;&#x7684;&#x9519;&#x8BEF;&#x800C;&#x5BFC;&#x81F4;&#x7ED3;&#x679C;&#x51FA;&#x9519;<br>&#x4F8B;&#x5982;&#xFF1A;<br><img src="/2019/10/28/&#x7528;&#x6808;&#x5B9E;&#x73B0;&#x7EFC;&#x5408;&#x8BA1;&#x7B97;&#x5668;/10.png" alt="img"></p>
+<h3 id="&#x6539;&#x8FDB;"><a href="#&#x6539;&#x8FDB;" class="headerlink" title="&#x6539;&#x8FDB;"></a>&#x6539;&#x8FDB;</h3><p>&#x53EA;&#x8981;&#x5F53;&#x524D;&#x7684;&#x8FD0;&#x7B97;&#x7B26;&#x7684;&#x7EA7;&#x522B;&#x5C0F;&#x4E8E;&#x6216;&#x8005;&#x7B49;&#x4E8E;&#x6808;&#x9876;&#x7684;&#xFF0C;&#x5C31;&#x904D;&#x5386;&#x7B26;&#x53F7;&#x6808;&#x5230;&#x6700;&#x540E;&#x7A7A;&#x4E3A;&#x6B62;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x540C;&#x7EA7;&#x8FD0;&#x7B97;&#x65F6;&#xFF0C;<br>&#x524D;&#x9762;&#x7684;&#x5148;&#x6267;&#x884C;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x540E;&#x6267;&#x884C;&#xFF08;&#x52A0;&#x4E2A;while&#x5FAA;&#x73AF;&#x5373;&#x53EF;&#xFF09;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">if (!operStack.isEmpty()) {</span><br><span class="line">    //&#x5982;&#x679C;&#x7B26;&#x53F7;&#x6808;&#x6709;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5C31;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;&#x5982;&#x679C;&#x5F53;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x5C0F;&#x4E8E;&#x6216;&#x8005;&#x7B49;&#x4E8E;&#x6808;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;,&#x5C31;&#x9700;&#x8981;&#x4ECE;&#x6570;&#x6808;&#x4E2D;pop&#x51FA;&#x4E24;&#x4E2A;&#x6570;&#xFF0C;</span><br><span class="line">    //&#x5728;&#x4ECE;&#x7B26;&#x53F7;&#x6808;&#x4E2D;pop&#x51FA;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#xFF0C;&#x8FDB;&#x884C;&#x8FD0;&#x7B97;&#xFF0C;&#x5C06;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#xFF0C;&#x5165;&#x6570;&#x6808;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5F53;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x5165;&#x7B26;&#x53F7;&#x6808;</span><br><span class="line">    if (operStack.priority(ch) &lt;= operStack.priority(operStack.peek())) {</span><br><span class="line">         while (!operStack.isEmpty()) {  //&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x7C7B;&#x4F3C;&#x4E8E;5-4*2-2&#x8FD9;&#x79CD;&#x540C;&#x7EA7;&#x7684;&#x56E0;&#x4E3A;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x800C;&#x51FA;&#x9519;&#x7684;&#x95EE;&#x9898;</span><br><span class="line">            num1 = numStack.pop();</span><br><span class="line">            num2 = numStack.pop();</span><br><span class="line">            oper = operStack.pop();</span><br><span class="line">            res = numStack.cal(num1, num2, oper);</span><br><span class="line">            //&#x628A;&#x8FD0;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x5982;&#x6570;&#x6808;</span><br><span class="line">            numStack.push(res);</span><br><span class="line">      }</span><br><span class="line">        //&#x7136;&#x540E;&#x5C06;&#x5F53;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x5165;&#x7B26;&#x53F7;&#x6808;</span><br><span class="line">        operStack.push(ch);</span><br><span class="line">    }else {</span><br><span class="line">        //&#x5982;&#x679C;&#x5F53;&#x524D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x5927;&#x4E8E;&#x6808;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x5165;&#x7B26;&#x53F7;&#x6808;&#x3002;</span><br><span class="line">        operStack.push(ch);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/10/28/&#x7528;&#x6808;&#x5B9E;&#x73B0;&#x7EFC;&#x5408;&#x8BA1;&#x7B97;&#x5668;/11.png" alt="img"></p>
 <h5 id="&#x6210;&#x529F;&#xFF01;"><a href="#&#x6210;&#x529F;&#xFF01;" class="headerlink" title="&#x6210;&#x529F;&#xFF01;"></a>&#x6210;&#x529F;&#xFF01;</h5>
       
 
@@ -353,7 +360,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用栈完成表达式的计算思路"><span class="toc-number">1.</span> <span class="toc-text">使用栈完成表达式的计算思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码实现"><span class="toc-number">2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上述代码的问题是："><span class="toc-number">3.</span> <span class="toc-text">上述代码的问题是：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优化"><span class="toc-number">4.</span> <span class="toc-text">优化</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#成功！"><span class="toc-number">4.0.1.</span> <span class="toc-text">成功！</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用栈完成表达式的计算思路"><span class="toc-number">1.</span> <span class="toc-text">使用栈完成表达式的计算思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码实现"><span class="toc-number">2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上述代码的问题是："><span class="toc-number">3.</span> <span class="toc-text">上述代码的问题是：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#优化"><span class="toc-number">4.</span> <span class="toc-text">优化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上述代码的问题是"><span class="toc-number">5.</span> <span class="toc-text">上述代码的问题是</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#改进"><span class="toc-number">6.</span> <span class="toc-text">改进</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#成功！"><span class="toc-number">6.0.1.</span> <span class="toc-text">成功！</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -498,6 +505,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">char</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
@@ -506,31 +517,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">char</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">spring表单标签</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JSR303数据校验</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -546,6 +537,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">spring表单标签</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JSR303数据校验</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -558,6 +557,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">上传图片</a>
               </li>
              
@@ -566,7 +569,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+                <a href="javascript:void(0)" class="js-tag color5">json</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
