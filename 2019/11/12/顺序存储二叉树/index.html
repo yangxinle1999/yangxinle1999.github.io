@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 日积月累</title>
+  <title>顺序存储二叉树(day15) | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="日积月累">
-<meta property="og:url" content="http://yoursite.com/archives/page/4/index.html">
+  <meta name="description" content="&amp;#x987A;&amp;#x5E8F;&amp;#x5B58;&amp;#x50A8;&amp;#x4E8C;&amp;#x53C9;&amp;#x6811;&amp;#x7684;&amp;#x6982;&amp;#x5FF5;">
+<meta name="keywords" content="数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="顺序存储二叉树(day15)">
+<meta property="og:url" content="http://yoursite.com/2019/11/12/顺序存储二叉树/index.html">
 <meta property="og:site_name" content="日积月累">
+<meta property="og:description" content="&amp;#x987A;&amp;#x5E8F;&amp;#x5B58;&amp;#x50A8;&amp;#x4E8C;&amp;#x53C9;&amp;#x6811;&amp;#x7684;&amp;#x6982;&amp;#x5FF5;">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2019/11/12/顺序存储二叉树/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/12/顺序存储二叉树/2.png">
+<meta property="og:updated_time" content="2019-11-12T05:24:11.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日积月累">
+<meta name="twitter:title" content="顺序存储二叉树(day15)">
+<meta name="twitter:description" content="&amp;#x987A;&amp;#x5E8F;&amp;#x5B58;&amp;#x50A8;&amp;#x4E8C;&amp;#x53C9;&amp;#x6811;&amp;#x7684;&amp;#x6982;&amp;#x5FF5;">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/12/顺序存储二叉树/1.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -150,422 +158,219 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-顺序存储二叉树" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      顺序存储二叉树(day15)
+    </h1>
+  
+
+        
+         
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/11/12/顺序存储二叉树/" class="archive-article-date">
+  	<time datetime="2019-11-12T05:20:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-12</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6982;&#x5FF5;"><a href="#&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6982;&#x5FF5;" class="headerlink" title="&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6982;&#x5FF5;"></a>&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6982;&#x5FF5;</h3><a id="more"></a>
+
+<p>&#x4ECE;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x6765;&#x770B;&#xFF0C;&#x6570;&#x7EC4;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;&#x548C;&#x6811;&#x7684;&#x5B58;&#x50A8;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x8F6C;&#x6362;&#xFF0C;&#x5373;&#x6570;&#x7EC4;&#x53EF;<br>&#x4EE5;&#x8F6C;&#x6362;&#x6210;&#x6811;&#xFF0C;&#x6811;&#x4E5F;&#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x7EC4;,&#x628A;&#x6811;&#x7684;&#x5B58;&#x50A8;&#x8F6C;&#x5316;&#x6210;&#x6570;&#x7EC4;&#xFF0C;&#x5C31;&#x53EB;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x3002;</p>
+<h2 id="&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x7279;&#x70B9;"><a href="#&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x7279;&#x70B9;" class="headerlink" title="&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x7279;&#x70B9;:"></a>&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x7279;&#x70B9;:</h2><p>1) &#x987A;&#x5E8F;&#x4E8C;&#x53C9;&#x6811;&#x901A;&#x5E38;&#x53EA;&#x8003;&#x8651;&#x5B8C;&#x5168;&#x4E8C;&#x53C9;&#x6811;<br>2)&#x7B2C;n&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x4E3A;2<em>n+ 1<br>3)&#x7B2C;n&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x4E3A;2</em>n+ 2<br>4)&#x7B2C;n&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x7236;&#x8282;&#x70B9;&#x4E3A;(n-1)/2<br>5) n:&#x8868;&#x793A;&#x4E8C;&#x53C9;&#x6811;&#x4E2D;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;&#x5143;&#x7D20;(&#x6309;0&#x5F00;&#x59CB;&#x7F16;&#x53F7;&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x4E3A;&#x4E86;&#x548C;&#x6570;&#x7EC4;&#x5BF9;&#x5E94;)<br><img src="/2019/11/12/&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;/1.png" alt="img"></p>
+<h3 id="&#x4EE3;&#x7801;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x5199;&#x5148;&#x5E8F;&#x904D;&#x5386;&#xFF09;&#xFF1A;"><a href="#&#x4EE3;&#x7801;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x5199;&#x5148;&#x5E8F;&#x904D;&#x5386;&#xFF09;&#xFF1A;" class="headerlink" title="&#x4EE3;&#x7801;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x5199;&#x5148;&#x5E8F;&#x904D;&#x5386;&#xFF09;&#xFF1A;"></a>&#x4EE3;&#x7801;&#xFF08;&#x8FD9;&#x91CC;&#x53EA;&#x5199;&#x5148;&#x5E8F;&#x904D;&#x5386;&#xFF09;&#xFF1A;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">public class ArrBinaryTreeDemo {  //&#x4EE5;&#x6570;&#x7EC4;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x4FDD;&#x5B58;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x5E76;&#x5B8C;&#x6210;&#x904D;&#x5386;</span><br><span class="line">    public static void main(String[] args) {</span><br><span class="line">         int[] arr=new int[]{1,2,3,4,5,6,7};</span><br><span class="line">         ArrayBinaryTrees arrayBinaryTrees=new ArrayBinaryTrees(arr);</span><br><span class="line">         arrayBinaryTrees.arrpresearch();</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">//&#x7F16;&#x5199;&#x4E00;&#x4E2A;ArrayBinaryTrees&#x5B9E;&#x73B0;&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;&#x904D;&#x5386;</span><br><span class="line">class ArrayBinaryTrees{</span><br><span class="line">    private int[] arr;  //&#x6570;&#x7EC4;</span><br><span class="line">    public ArrayBinaryTrees(int[] arr) {</span><br><span class="line">        this.arr = arr;</span><br><span class="line">    }</span><br><span class="line">    public void arrpresearch(){  //&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#xFF0C;&#x56E0;&#x4E3A;&#x5927;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x4ECE;root&#x5F00;&#x59CB;&#x904D;&#x5386;</span><br><span class="line">        arrpresearch(0);</span><br><span class="line">    }</span><br><span class="line">    //&#x5148;&#x5E8F;&#x904D;&#x5386;&#xFF08;&#x7236;--&#x5DE6;--&#x53F3;&#xFF09;</span><br><span class="line">    public void arrpresearch(int index){  //index&#x662F;&#x5F00;&#x59CB;&#x904D;&#x5386;&#x7684;&#x6570;&#x7EC4;&#x7684;&#x4E0B;&#x6807;</span><br><span class="line">        if (arr==null || arr.length==0){</span><br><span class="line">            System.out.println(&quot;&#x6570;&#x7EC4;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E0D;&#x80FD;&#x904D;&#x5386;&#xFF01;&quot;);</span><br><span class="line">        }else {</span><br><span class="line">            System.out.println(arr[index]);  //&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8282;&#x70B9;</span><br><span class="line">            if ((2*index+1)&lt;arr.length){  //&#x5411;&#x5DE6;&#x9012;&#x5F52;&#x904D;&#x5386;&#xFF08;&#x6CE8;&#x610F;&#x6570;&#x7EC4;&#x4E0D;&#x80FD;&#x8D8A;&#x754C;&#xFF09;&#xFF0C;&#x8FD9;&#x91CC;&#x8981;&#x6CE8;&#x610F;&#x6570;&#x7EC4;&#x4E0E;&#x6811;&#x4E0B;&#x6807;&#x7684;&#x5173;&#x7CFB;</span><br><span class="line">                arrpresearch(2*index+1);</span><br><span class="line">            }</span><br><span class="line">            if ((2*index+2)&lt;arr.length){  //&#x5411;&#x53F3;&#x9012;&#x5F52;&#x904D;&#x5386;&#xFF08;&#x6CE8;&#x610F;&#x6570;&#x7EC4;&#x4E0D;&#x80FD;&#x8D8A;&#x754C;&#xFF09;&#xFF0C;&#x8FD9;&#x91CC;&#x8981;&#x6CE8;&#x610F;&#x6570;&#x7EC4;&#x4E0E;&#x6811;&#x4E0B;&#x6807;&#x7684;&#x5173;&#x7CFB;</span><br><span class="line">                arrpresearch(2*index+2);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/11/12/&#x987A;&#x5E8F;&#x5B58;&#x50A8;&#x4E8C;&#x53C9;&#x6811;/2.png" alt="img"></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>生活拮据，撰文为生！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/10/18/docker三大要素/" class="archive-article-date">
-  	<time datetime="2019-10-18T10:54:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/18/docker三大要素/">docker三大要素</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据结构</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/12/顺序存储二叉树/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/10/18/Docker/" class="archive-article-date">
-  	<time datetime="2019-10-18T10:34:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/12/前序中序后序遍历查找元素与删除指定节点（先不考虑顺序）/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前序中序后序遍历查找元素与删除指定节点（先不考虑顺序）day15</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/18/Docker/">Docker基础小结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#顺序存储二叉树的概念"><span class="toc-number">1.</span> <span class="toc-text">顺序存储二叉树的概念</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#顺序存储二叉树的特点"><span class="toc-number"></span> <span class="toc-text">顺序存储二叉树的特点:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#代码（这里只写先序遍历）："><span class="toc-number">1.</span> <span class="toc-text">代码（这里只写先序遍历）：</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/10/12/如何在windows系统中访问docker下的tomcat/" class="archive-article-date">
-  	<time datetime="2019-10-12T13:30:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/12/如何在windows系统中访问docker下的tomcat/">如何在windows系统中访问docker下的tomcat</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">docker</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/10/06/json基础总结/" class="archive-article-date">
-  	<time datetime="2019-10-06T08:15:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/06/json基础总结/">json基础总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">json</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/25/spring表单标签和数据校验/" class="archive-article-date">
-  	<time datetime="2019-09-25T11:31:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/spring表单标签和数据校验/">spring表单标签和数据校验</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">spring表单标签</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JSR303数据校验</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/25/关于data时间封装的问题/" class="archive-article-date">
-  	<time datetime="2019-09-25T08:29:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/关于data时间封装的问题/">关于data时间封装的问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">data</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/25/ModelAttribute的总结/" class="archive-article-date">
-  	<time datetime="2019-09-25T07:56:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/ModelAttribute的总结/">@ModelAttribute的总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">@ModelAttribute</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/24/ssm分页总结/" class="archive-article-date">
-  	<time datetime="2019-09-24T13:16:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/24/ssm分页总结/">ssm分页总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ssm分页</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/24/关于用沙箱版支付宝付钱的总结/" class="archive-article-date">
-  	<time datetime="2019-09-24T11:09:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/24/关于用沙箱版支付宝付钱的总结/">关于用沙箱版支付宝付钱的总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">支付宝</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/23/关于WEB-INF下的文件及文件之间调用总结/" class="archive-article-date">
-  	<time datetime="2019-09-23T04:45:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/23/关于WEB-INF下的文件及文件之间调用总结/">关于WEB-INF下的文件及文件之间调用总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">WEB-INF</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
+  
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NjcyNi8yMzIzNQ==">
+  <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/3/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/5/">Next &raquo;</a>
-    </nav>
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 
 
+  
+
+  
 
           </div>
         </div>
@@ -599,8 +404,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
