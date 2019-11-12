@@ -23,7 +23,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/11/11/前序中序后序遍历/6.png">
 <meta property="og:image" content="http://yoursite.com/2019/11/11/前序中序后序遍历/7.png">
 <meta property="og:image" content="http://yoursite.com/2019/11/11/前序中序后序遍历/1.png">
-<meta property="og:updated_time" content="2019-11-11T13:26:48.855Z">
+<meta property="og:updated_time" content="2019-11-11T13:53:18.932Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="树与前序中序后序遍历(day14)">
 <meta name="twitter:description" content="&amp;#x6811;">
@@ -197,12 +197,12 @@
 <h2 id="&#x4E8C;&#x53C9;&#x6811;"><a href="#&#x4E8C;&#x53C9;&#x6811;" class="headerlink" title="&#x4E8C;&#x53C9;&#x6811;"></a>&#x4E8C;&#x53C9;&#x6811;</h2><p>&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6982;&#x5FF5;<br>1)&#x6811;&#x6709;&#x5F88;&#x591A;&#x79CD;&#xFF0C;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x6709;&#x4E24;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x79F0;&#x4E3A;&#x4E8C;&#x53C9;&#x6811;&#x3002;<br>2)&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x5206;&#x4E3A;&#x5DE6;&#x8282;&#x70B9;&#x548C;&#x53F3;&#x8282;&#x70B9;&#x3002;<br><img src="/2019/11/11/&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;/5.png" alt="img"><br>3) &#x5982;&#x679C;&#x8BE5;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6240;&#x6709;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x5728;&#x6700;&#x540E;&#x4E00;&#x5C42;&#xFF0C;&#x5E76;&#x4E14;&#x7ED3;&#x70B9;&#x603B;&#x6570;=2^n-1,n&#x4E3A;&#x5C42;<br>&#x6570;&#xFF0C;&#x5219;&#x6211;&#x4EEC;&#x79F0;&#x4E3A;&#x6EE1;&#x4E8C;&#x53C9;&#x6811;&#x3002;<br>4)&#x5982;&#x679C;&#x8BE5;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x6240;&#x6709;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x5728;&#x6700;&#x540E;&#x4E00;&#x5C42;&#x6216;&#x8005;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x5C42;&#xFF0C;&#x800C;&#x4E14;&#x6700;&#x540E;&#x4E00;&#x5C42;<br>&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5728;&#x5DE6;&#x8FB9;&#x8FDE;&#x7EED;&#xFF0C;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x5C42;&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5728;&#x53F3;&#x8FB9;&#x8FDE;&#x7EED;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E3A;&#x5B8C;&#x5168;&#x4E8C;&#x53C9;&#x6811;&#x3002;<br><img src="/2019/11/11/&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;/6.png" alt="img"></p>
 <p><img src="/2019/11/11/&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;/7.png" alt="img"></p>
 <h1 id="&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;"><a href="#&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;" class="headerlink" title="&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;"></a>&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;</h1><p>&#x524D;&#x5E8F;&#x904D;&#x5386;:&#x5148;&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x518D;&#x904D;&#x5386;&#x5DE6;&#x5B50;&#x6811;&#x548C;&#x53F3;&#x5B50;&#x6811;<br>&#x4E2D;&#x5E8F;&#x904D;&#x5386;:&#x5148;&#x904D;&#x5386;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x518D;&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;&#xFF0C;&#x518D;&#x904D;&#x5386;&#x53F3;&#x5B50;&#x6811;<br>&#x540E;&#x5E8F;&#x904D;&#x5386;:&#x5148;&#x904D;&#x5386;&#x5DE6;&#x5B50;&#x6811;&#xFF0C;&#x518D;&#x904D;&#x5386;&#x53F3;&#x5B50;&#x6811;&#xFF0C;&#x6700;&#x540E;&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;<br>&#x5C0F;&#x7ED3;:&#x770B;&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x786E;&#x5B9A;&#x662F;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#x8FD8;&#x662F;&#x540E;&#x5E8F;</p>
-<h3 id="&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;"><a href="#&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;" class="headerlink" title="&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;"></a>&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;</h3><p>1.&#x521B;&#x5EFA;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;</p>
-<ol start="2">
+<h3 id="&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;"><a href="#&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;" class="headerlink" title="&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;"></a>&#x5206;&#x6790;&#x4E8C;&#x53C9;&#x6811;&#x7684;&#x524D;&#x5E8F;&#xFF0C;&#x4E2D;&#x5E8F;&#xFF0C;&#x540E;&#x5E8F;&#x7684;&#x904D;&#x5386;&#x6B65;&#x9AA4;</h3><ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x9897;&#x4E8C;&#x53C9;&#x6811;</li>
 <li>&#x524D;&#x5E8F;&#x904D;&#x5386;<br> 2.1&#x5148;&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8282;&#x70B9;(&#x521D;&#x59CB;&#x7684;&#x65F6;&#x5019;&#x662F;root&#x8282;&#x70B9;)<br> 2.2&#x5982;&#x679C;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x7EE7;&#x7EED;&#x524D;&#x5E8F;&#x904D;&#x5386;<br> 2.2&#x5982;&#x679C;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x7EE7;&#x7EED;&#x524D;&#x5E8F;&#x904D;&#x5386;</li>
-<li>&#x4E2D;&#x5E8F;&#x904D;&#x5386;<br>  3.1&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;<br>  3.2&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8282;&#x70B9;<br>  3.2&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x4E2D;&#x5E8F;&#x904D;&#x5386;</li>
-<li>&#x540E;&#x5E8F;&#x904D;&#x5386;<br>  4.1&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x540E;&#x5E8F;&#x904D;&#x5386;&#xFF0C;<br>  4.2&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x540E;&#x5E8F;&#x904D;&#x5386;<br>  4.3&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8282;&#x70B9;</li>
-</ol>
+<li>&#x4E2D;&#x5E8F;&#x904D;&#x5386;<br> 3.1&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#xFF0C;<br> 3.2&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8282;&#x70B9;<br> 3.2&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x4E2D;&#x5E8F;&#x904D;&#x5386;</li>
+<li>&#x540E;&#x5E8F;&#x904D;&#x5386;<br> 4.1&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x540E;&#x5E8F;&#x904D;&#x5386;&#xFF0C;<br> 4.2&#x5982;&#x679C;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B50;&#x8282;&#x70B9;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9012;&#x5F52;&#x540E;&#x5E8F;&#x904D;&#x5386;<br> 4.3&#x8F93;&#x51FA;&#x5F53;&#x524D;&#x8282;&#x70B9;</li>
+</ul>
 <h3 id="&#x4EE3;&#x7801;&#xFF08;&#x4E3B;&#x8981;&#x7406;&#x89E3;&#x9012;&#x5F52;&#xFF09;&#xFF1A;"><a href="#&#x4EE3;&#x7801;&#xFF08;&#x4E3B;&#x8981;&#x7406;&#x89E3;&#x9012;&#x5F52;&#xFF09;&#xFF1A;" class="headerlink" title="&#x4EE3;&#x7801;&#xFF08;&#x4E3B;&#x8981;&#x7406;&#x89E3;&#x9012;&#x5F52;&#xFF09;&#xFF1A;"></a>&#x4EE3;&#x7801;&#xFF08;&#x4E3B;&#x8981;&#x7406;&#x89E3;&#x9012;&#x5F52;&#xFF09;&#xFF1A;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br></pre></td><td class="code"><pre><span class="line">public class BinaryTreeDemo {</span><br><span class="line">    public static void main(String[] args) {</span><br><span class="line">        //&#x521B;&#x5EFA;&#x4E00;&#x68F5;&#x4E8C;&#x53C9;&#x6811;</span><br><span class="line">        BinaryTree binaryTree=new BinaryTree();</span><br><span class="line">        //&#x521B;&#x5EFA;&#x9700;&#x8981;&#x7684;&#x7ED3;&#x70B9;</span><br><span class="line">        node node1=new node(1,&quot;qq&quot;);</span><br><span class="line">        node node2=new node(2,&quot;ww&quot;);</span><br><span class="line">        node node3=new node(3,&quot;ee&quot;);</span><br><span class="line">        node node4=new node(4,&quot;tt&quot;);</span><br><span class="line">        node node5=new node(5,&quot;yy&quot;);</span><br><span class="line">        //&#x8BF4;&#x660E;&#xFF0C;&#x5148;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x8BE5;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x540E;&#x9762;&#x6211;&#x4EEC;&#x7528;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x4E8C;&#x53C9;&#x6811;</span><br><span class="line">       node1.setLeft(node2);</span><br><span class="line">       node1.setRight(node3);</span><br><span class="line">       node3.setRight(node4);</span><br><span class="line">       node3.setLeft(node5);</span><br><span class="line">       binaryTree.setRoot(node1);</span><br><span class="line">       //&#x6D4B;&#x8BD5;</span><br><span class="line">        System.out.println(&quot;&#x524D;&#x5E8F;&#x904D;&#x5386;&quot;);</span><br><span class="line">        binaryTree.pre1();</span><br><span class="line">        System.out.println(&quot;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&quot;);</span><br><span class="line">        binaryTree.mid1();</span><br><span class="line">        System.out.println(&quot;&#x540E;&#x5E8F;&#x904D;&#x5386;&quot;);</span><br><span class="line">        binaryTree.after1();</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">//&#x5B9A;&#x4E49;BinaryTree&#x4E8C;&#x53C9;&#x6811;</span><br><span class="line">class BinaryTree{</span><br><span class="line">    private node root;  //&#x5B9A;&#x4E49;&#x6839;&#x8282;&#x70B9;</span><br><span class="line">    public void setRoot(node root) {  //&#x5B9A;&#x4E49;set&#x65B9;&#x6CD5;</span><br><span class="line">        this.root = root;</span><br><span class="line">    }</span><br><span class="line">    //&#x524D;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">    public void pre1(){</span><br><span class="line">        if (this.root!=null){</span><br><span class="line">            this.root.pre();  //&#x8C01;&#x8C03;&#x7528;this&#x5C31;&#x662F;&#x8C01;</span><br><span class="line">        }else {</span><br><span class="line">            System.out.println(&quot;&#x4E8C;&#x53C9;&#x6811;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E0D;&#x80FD;&#x904D;&#x5386;&#xFF01;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    //&#x4E2D;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">    public void mid1(){</span><br><span class="line">        if (this.root!=null){</span><br><span class="line">            this.root.mid();  //&#x8C01;&#x8C03;&#x7528;this&#x5C31;&#x662F;&#x8C01;</span><br><span class="line">        }else {</span><br><span class="line">            System.out.println(&quot;&#x4E8C;&#x53C9;&#x6811;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E0D;&#x80FD;&#x904D;&#x5386;&#xFF01;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    //&#x540E;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">    public void after1(){</span><br><span class="line">        if (this.root!=null){</span><br><span class="line">            this.root.after();  //&#x8C01;&#x8C03;&#x7528;this&#x5C31;&#x662F;&#x8C01;</span><br><span class="line">        }else {</span><br><span class="line">            System.out.println(&quot;&#x4E8C;&#x53C9;&#x6811;&#x4E3A;&#x7A7A;&#xFF0C;&#x4E0D;&#x80FD;&#x904D;&#x5386;&#xFF01;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line">class node {</span><br><span class="line">    private int id;</span><br><span class="line">    private String name;</span><br><span class="line">    private node left;</span><br><span class="line">    private node right;</span><br><span class="line"></span><br><span class="line">    public node(int id, String name) {</span><br><span class="line">        this.id = id;</span><br><span class="line">        this.name = name;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public int getId() {</span><br><span class="line">        return id;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public void setId(int id) {</span><br><span class="line">        this.id = id;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public String getName() {</span><br><span class="line">        return name;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public void setName(String name) {</span><br><span class="line">        this.name = name;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public node getLeft() {</span><br><span class="line">        return left;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public void setLeft(node left) {</span><br><span class="line">        this.left = left;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public node getRight() {</span><br><span class="line">        return right;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public void setRight(node right) {</span><br><span class="line">        this.right = right;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String toString() {</span><br><span class="line">        return &quot;node{&quot; +</span><br><span class="line">                &quot;id=&quot; + id +</span><br><span class="line">                &quot;, name=&apos;&quot; + name + &apos;\&apos;&apos; +</span><br><span class="line">                &apos;}&apos;;</span><br><span class="line">    }</span><br><span class="line">    //&#x7F16;&#x5199;&#x524D;&#x5E8F;&#x904D;&#x5386;&#x7684;&#x65B9;&#x6CD5;(&#x7236;--&#x5DE6;--&#x53F3;)&#xFF0C;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x6CD5;</span><br><span class="line">    public void pre(){</span><br><span class="line">        System.out.println(this);  //&#x5148;&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;</span><br><span class="line">        if (this.left!=null){</span><br><span class="line">             this.left.pre();   //&#x5411;&#x5DE6;&#x8FDB;&#x884C;&#x524D;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">        }</span><br><span class="line">        if (this.right!=null){</span><br><span class="line">            this.right.pre();  //&#x5411;&#x53F3;&#x8FDB;&#x884C;&#x524D;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    //&#x7F16;&#x5199;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#x7684;&#x65B9;&#x6CD5;(&#x5DE6;--&#x7236;--&#x53F3;)&#xFF0C;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x6CD5;</span><br><span class="line">    public void mid(){</span><br><span class="line">       if (this.left!=null){</span><br><span class="line">           this.left.mid();   //&#x5411;&#x5DE6;&#x8FDB;&#x884C;&#x4E2D;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">       }</span><br><span class="line">        System.out.println(this);  //&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;</span><br><span class="line">       if (this.right!=null){</span><br><span class="line">           this.right.mid();   //&#x5411;&#x53F3;&#x8FDB;&#x884C;&#x4E2D;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">       }</span><br><span class="line">    }</span><br><span class="line">    //&#x7F16;&#x5199;&#x540E;&#x5E8F;&#x904D;&#x5386;&#x7684;&#x65B9;&#x6CD5;(&#x5DE6;--&#x53F3;--&#x7236;)&#xFF0C;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x6CD5;</span><br><span class="line">    public void after(){</span><br><span class="line">        if (this.left!=null){</span><br><span class="line">            this.left.after();   //&#x5411;&#x5DE6;&#x8FDB;&#x884C;&#x540E;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">        }</span><br><span class="line">        if (this.right!=null){</span><br><span class="line">            this.right.after();   //&#x5411;&#x53F3;&#x8FDB;&#x884C;&#x540E;&#x5E8F;&#x904D;&#x5386;</span><br><span class="line">        }</span><br><span class="line">        System.out.println(this);  //&#x8F93;&#x51FA;&#x7236;&#x8282;&#x70B9;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2019/11/11/&#x524D;&#x5E8F;&#x4E2D;&#x5E8F;&#x540E;&#x5E8F;&#x904D;&#x5386;/1.png" alt="img"></p>
@@ -314,6 +314,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/11/12/前序中序后序遍历查找元素与删除指定节点（先不考虑顺序）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          前序中序后序遍历查找元素与删除指定节点（先不考虑顺序）day15
+        
+      </div>
+    </a>
   
   
     <a href="/2019/11/11/哈希表总结/" id="article-nav-older" class="article-nav-link-wrap">
@@ -489,14 +498,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">@ModelAttribute</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">char</a>
               </li>
              
@@ -505,7 +506,23 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">@ModelAttribute</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -521,23 +538,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">内网映射</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">data</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -549,15 +554,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">支付宝</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">上传图片</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">上传和下载文件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">data</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">支付宝</a>
               </li>
              
               <li class="article-tag-list-item">
