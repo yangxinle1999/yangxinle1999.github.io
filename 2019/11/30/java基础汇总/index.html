@@ -8,14 +8,23 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>java基础汇总 | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="Java&amp;#x4E24;&amp;#x79CD;&amp;#x6838;&amp;#x5FC3;&amp;#x673A;&amp;#x5236;">
+<meta name="keywords" content="javase">
+<meta property="og:type" content="article">
 <meta property="og:title" content="java基础汇总">
 <meta property="og:url" content="http://yoursite.com/2019/11/30/java基础汇总/index.html">
 <meta property="og:site_name" content="日积月累">
+<meta property="og:description" content="Java&amp;#x4E24;&amp;#x79CD;&amp;#x6838;&amp;#x5FC3;&amp;#x673A;&amp;#x5236;">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-30T13:54:11.247Z">
+<meta property="og:image" content="http://yoursite.com/2019/11/30/java基础汇总/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/30/java基础汇总/3.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/30/java基础汇总/4.png">
+<meta property="og:image" content="http://yoursite.com/2019/11/30/java基础汇总/5.png">
+<meta property="og:updated_time" content="2019-11-30T14:11:49.823Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java基础汇总">
+<meta name="twitter:description" content="Java&amp;#x4E24;&amp;#x79CD;&amp;#x6838;&amp;#x5FC3;&amp;#x673A;&amp;#x5236;">
+<meta name="twitter:image" content="http://yoursite.com/2019/11/30/java基础汇总/2.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -191,7 +200,42 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="Java&#x4E24;&#x79CD;&#x6838;&#x5FC3;&#x673A;&#x5236;"><a href="#Java&#x4E24;&#x79CD;&#x6838;&#x5FC3;&#x673A;&#x5236;" class="headerlink" title="Java&#x4E24;&#x79CD;&#x6838;&#x5FC3;&#x673A;&#x5236;"></a>Java&#x4E24;&#x79CD;&#x6838;&#x5FC3;&#x673A;&#x5236;</h3><a id="more"></a>
+
+<p>Java&#x865A;&#x62DF;&#x673A;(Java Virtal Machine) &#xFF0C;JVM<br>&#x5783;&#x573E;&#x6536;&#x96C6;&#x673A;&#x5236;(Garbage Collection) &#xFF0C;GC</p>
+<h3 id="Java&#x8BED;&#x8A00;&#x7684;&#x7279;&#x70B9;-&#x8DE8;&#x5E73;&#x53F0;&#x6027;"><a href="#Java&#x8BED;&#x8A00;&#x7684;&#x7279;&#x70B9;-&#x8DE8;&#x5E73;&#x53F0;&#x6027;" class="headerlink" title="Java&#x8BED;&#x8A00;&#x7684;&#x7279;&#x70B9;:&#x8DE8;&#x5E73;&#x53F0;&#x6027;"></a>Java&#x8BED;&#x8A00;&#x7684;&#x7279;&#x70B9;:&#x8DE8;&#x5E73;&#x53F0;&#x6027;</h3><p><a href="/1.png">img</a></p>
+<ul>
+<li>&#x56E0;&#x4E3A;&#x6709;&#x4E86;JVM,&#x540C;&#x4E00;&#x4E2A;Java&#x7A0B;&#x5E8F;&#x5728;&#x4E09;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x90FD;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;Java&#x7A0B;&#x5E8F;&#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x6027;&#x3002;<ol>
+<li>JVM&#x662F;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#xFF0C;&#x5177;&#x6709;&#x6307;&#x4EE4;&#x96C6;&#x5E76;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5B58;&#x50A8;&#x533A;&#x57DF;&#x3002;&#x8D1F;&#x8D23;&#x6267;&#x884C;&#x6307;&#x4EE4;&#xFF0C;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x3001;&#x5185;&#x5B58;&#x3001;&#x5BC4;&#x5B58;&#x5668;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x865A;&#x62DF;&#x673A;&#x3002;</li>
+<li>Java&#x865A;&#x62DF;&#x673A;&#x673A;&#x5236;&#x5C4F;&#x853D;&#x4E86;&#x5E95;&#x5C42;&#x8FD0;&#x884C;&#x5E73;&#x53F0;&#x7684;&#x5DEE;&#x522B;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x201C;&#x4E00;&#x6B21;&#x7F16;&#x8BD1;&#xFF0C;&#x5230;&#x5904;&#x8FD0;&#x884C;&#x201D;&#x3002;<br><img src="/2019/11/30/java&#x57FA;&#x7840;&#x6C47;&#x603B;/2.png" alt="img"></li>
+</ol>
+</li>
+</ul>
+<p><img src="/2019/11/30/java&#x57FA;&#x7840;&#x6C47;&#x603B;/3.png" alt="img"></p>
+<h2 id="&#x6838;&#x5FC3;&#x673A;&#x5236;-&#x5783;&#x573E;&#x56DE;&#x6536;"><a href="#&#x6838;&#x5FC3;&#x673A;&#x5236;-&#x5783;&#x573E;&#x56DE;&#x6536;" class="headerlink" title="&#x6838;&#x5FC3;&#x673A;&#x5236;-&#x5783;&#x573E;&#x56DE;&#x6536;"></a>&#x6838;&#x5FC3;&#x673A;&#x5236;-&#x5783;&#x573E;&#x56DE;&#x6536;</h2><p>&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x5E94;&#x56DE;&#x6536;&#x4E00;&#x4E00; &#x5783;&#x573E;&#x56DE;&#x6536;&#x3002;<br>&#x5728;C/C++&#x7B49;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x7531;&#x7A0B;&#x5E8F;&#x5458;&#x8D1F;&#x8D23;&#x56DE;&#x6536;&#x65E0;&#x7528;&#x5185;&#x5B58;&#x3002;<br>Java&#x8BED;&#x8A00;&#x6D88;&#x9664;&#x4E86;&#x7A0B;&#x5E8F;&#x5458;&#x56DE;&#x6536;&#x65E0;&#x7528;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x7684;&#x8D23;&#x4EFB;:&#x5B83;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x7CFB;&#x7EDF;&#x7EA7;&#x7EBF;&#x7A0B;&#x8DDF;&#x8E2A;<br>&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x7684;&#x5206;&#x914D;&#x60C5;&#x51B5;&#x3002;&#x5E76;&#x5728;JVM&#x7A7A;&#x95F2;&#x65F6;&#xFF0C;&#x68C0;&#x67E5;&#x5E76;&#x91CA;&#x653E;&#x90A3;&#x4E9B;&#x53EF;&#x88AB;&#x91CA;&#x653E;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x3002;<br>&#x5783;&#x573E;&#x56DE;&#x6536;&#x5728;Java&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x81EA;&#x52A8;&#x8FDB;&#x884C;&#xFF0C;&#x7A0B;&#x5E8F;&#x5458;&#x65E0;&#x6CD5;&#x7CBE;&#x786E;&#x63A7;&#x5236;&#x548C;&#x5E72;&#x9884;&#x3002;</p>
+<hr>
+<ul>
+<li>C, C++,&#x7531;&#x7A0B;&#x5E8F;&#x5458;&#x56DE;&#x6536;&#xFF0C;&#x624B;&#x52A8;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x56DE;&#x6536;<ul>
+<li>&#x4F18;&#x70B9;: &#x80FD;&#x591F;&#x5728;&#x5185;&#x5B58;&#x4E0D;&#x4F7F;&#x7528;&#x65F6;&#x5FEB;&#x901F;&#x56DE;&#x6536;&#xFF0C;&#x51C6;&#x786E;&#x9AD8;&#x6548;</li>
+<li>&#x7F3A;&#x70B9;:&#x5BB9;&#x6613;&#x5931;&#x8BEF;&#x51FA;&#x73B0;bug&#xFF0C;&#x4F8B;&#x5982;&#x5FD8;&#x8BB0;&#x7F16;&#x5199;&#x56DE;&#x6536;&#x5185;&#x5B58;&#x7684;&#x4EE3;&#x7801;?&#x5185;&#x5B58;&#x4E00;&#x76F4;&#x4E0D;&#x56DE;&#x6536;)</li>
+</ul>
+</li>
+<li>java, &#x5783;&#x573E;&#x56DE;&#x6536;&#x662F;&#x81EA;&#x52A8;&#xFF0C;&#x5F00;&#x4E86;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x96C6;&#x7EBF;&#x7A0B;&#x81EA;&#x52A8;&#x53BB;&#x68C0;&#x6D4B;&#x54EA;&#x4E9B;&#x5185;&#x5B58;&#x4E0D;&#x7528;&#x4E86;&#x7136;&#x540E;&#x56DE;&#x6536;&#x6389;<ul>
+<li>&#x4F18;&#x70B9;: &#x81EA;&#x52A8;&#x7684;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5FD8;&#x8BB0;&#x56DE;&#x6536;</li>
+<li>&#x7F3A;&#x70B9;:&#x56DE;&#x6536;&#x4E0D;&#x53CA;&#x65F6;<br>&#x4E00;&#x822C;&#x7684;&#x89C2;&#x70B9;&#x662F;&#xFF0C;&#x5B81;&#x53EF;&#x56DE;&#x6536;&#x4E0D;&#x53CA;&#x65F6;&#x4F46;&#x662F;&#x4E00;&#x5B9A;&#x8981;&#x56DE;&#x6536;&#xFF0C;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x66F4;&#x5408;&#x9002;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4F7F;&#x7528;JDK&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x5B8C;&#x6210;&#x7684;java&#x7A0B;&#x5E8F;&#xFF0C;&#x4EA4;&#x7ED9;JRE&#x53BB;&#x8FD0;&#x884C;&#x3002;JDK&#x5305;&#x542B;JRE&#xFF0C;JRE&#x5305;&#x542B;JVM"><a href="#&#x4F7F;&#x7528;JDK&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x5B8C;&#x6210;&#x7684;java&#x7A0B;&#x5E8F;&#xFF0C;&#x4EA4;&#x7ED9;JRE&#x53BB;&#x8FD0;&#x884C;&#x3002;JDK&#x5305;&#x542B;JRE&#xFF0C;JRE&#x5305;&#x542B;JVM" class="headerlink" title="&#x4F7F;&#x7528;JDK&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x5B8C;&#x6210;&#x7684;java&#x7A0B;&#x5E8F;&#xFF0C;&#x4EA4;&#x7ED9;JRE&#x53BB;&#x8FD0;&#x884C;&#x3002;JDK&#x5305;&#x542B;JRE&#xFF0C;JRE&#x5305;&#x542B;JVM ."></a>&#x4F7F;&#x7528;JDK&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#x5B8C;&#x6210;&#x7684;java&#x7A0B;&#x5E8F;&#xFF0C;&#x4EA4;&#x7ED9;JRE&#x53BB;&#x8FD0;&#x884C;&#x3002;JDK&#x5305;&#x542B;JRE&#xFF0C;JRE&#x5305;&#x542B;JVM .</h3><h3 id="&#x7F16;&#x8BD1;&#x5E76;&#x8FD0;&#x884C;d&#x76D8;&#x4E2D;&#x7684;java&#x6587;&#x4EF6;&#xFF08;&#x5148;&#x7F16;&#x8BD1;&#x6210;-class&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD0;&#x884C;-class&#x6587;&#x4EF6;&#xFF09;&#xFF1A;"><a href="#&#x7F16;&#x8BD1;&#x5E76;&#x8FD0;&#x884C;d&#x76D8;&#x4E2D;&#x7684;java&#x6587;&#x4EF6;&#xFF08;&#x5148;&#x7F16;&#x8BD1;&#x6210;-class&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD0;&#x884C;-class&#x6587;&#x4EF6;&#xFF09;&#xFF1A;" class="headerlink" title="&#x7F16;&#x8BD1;&#x5E76;&#x8FD0;&#x884C;d&#x76D8;&#x4E2D;&#x7684;java&#x6587;&#x4EF6;&#xFF08;&#x5148;&#x7F16;&#x8BD1;&#x6210;.class&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD0;&#x884C;.class&#x6587;&#x4EF6;&#xFF09;&#xFF1A;"></a>&#x7F16;&#x8BD1;&#x5E76;&#x8FD0;&#x884C;d&#x76D8;&#x4E2D;&#x7684;java&#x6587;&#x4EF6;&#xFF08;&#x5148;&#x7F16;&#x8BD1;&#x6210;.class&#x6587;&#x4EF6;&#xFF0C;&#x5728;&#x8FD0;&#x884C;.class&#x6587;&#x4EF6;&#xFF09;&#xFF1A;</h3><p><img src="/2019/11/30/java&#x57FA;&#x7840;&#x6C47;&#x603B;/4.png" alt="img"></p>
+<h3 id="&#x5173;&#x952E;&#x5B57;&#x4E0E;&#x4FDD;&#x7559;&#x5B57;"><a href="#&#x5173;&#x952E;&#x5B57;&#x4E0E;&#x4FDD;&#x7559;&#x5B57;" class="headerlink" title="&#x5173;&#x952E;&#x5B57;&#x4E0E;&#x4FDD;&#x7559;&#x5B57;"></a>&#x5173;&#x952E;&#x5B57;&#x4E0E;&#x4FDD;&#x7559;&#x5B57;</h3><p>&#x5173;&#x952E;&#x5B57;:&#x5C31;&#x662F;&#x5728;java&#x8BED;&#x8A00;&#x7F16;&#x7A0B;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5728;&#x5173;&#x952E;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x7684;&#x5355;&#x8BCD;&#xFF0C;&#x4F53;&#x73B0;&#x5173;&#x952E;&#x7684;&#x5730;&#x65B9;&#x7684;&#x542B;&#x4E49;&#xFF0C;&#x8FD9;&#x4E9B;&#x5355;&#x8BCD;&#x90FD;&#x662F;&#x7279;&#x6709;&#x7684;&#x4E8B;&#x5148;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x5B9A;&#x4E49;&#x3002;<br>&#x4FDD;&#x7559;&#x5B57;:&#x53EF;&#x80FD;&#x5728;&#x4EE5;&#x540E;&#x88AB;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x5173;&#x952E;&#x5B57;&#x7684;&#x5355;&#x8BCD;&#xFF0C;java&#x5DF2;&#x7ECF;&#x628A;&#x8FD9;&#x4E9B;&#x5355;&#x8BCD;&#x9884;&#x5B9A;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x5355;&#x8BCD;&#x5C3D;&#x91CF;&#x5C31;&#x4E0D;&#x8981;&#x5728;&#x7F16;&#x7A0B;&#x4E2D;&#x53BB;&#x968F;&#x610F;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="&#x6807;&#x8BC6;&#x7B26;"><a href="#&#x6807;&#x8BC6;&#x7B26;" class="headerlink" title="&#x6807;&#x8BC6;&#x7B26;"></a>&#x6807;&#x8BC6;&#x7B26;</h3><p>Java&#x5BF9;&#x5404;&#x79CD;&#x53D8;&#x91CF;&#x3001;&#x65B9;&#x6CD5;&#x548C;&#x7C7B;&#x7B49;&#x8981;&#x7D20;&#x547D;&#x540D;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x79F0;&#x4E3A;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;<br>&#x51E1;&#x662F;&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#x8D77;&#x540D;&#x5B57;&#x7684;&#x5730;&#x65B9;&#x90FD;&#x53EB;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<h3 id="&#x5B9A;&#x4E49;&#x5408;&#x6CD5;&#x6807;&#x8BC6;&#x7B26;&#x89C4;&#x5219;"><a href="#&#x5B9A;&#x4E49;&#x5408;&#x6CD5;&#x6807;&#x8BC6;&#x7B26;&#x89C4;&#x5219;" class="headerlink" title="&#x5B9A;&#x4E49;&#x5408;&#x6CD5;&#x6807;&#x8BC6;&#x7B26;&#x89C4;&#x5219;:"></a>&#x5B9A;&#x4E49;&#x5408;&#x6CD5;&#x6807;&#x8BC6;&#x7B26;&#x89C4;&#x5219;:</h3><p>&#x7531;26&#x4E2A;&#x82F1;&#x6587;&#x5B57;&#x6BCD;&#x5927;&#x5C0F;&#x5199;&#xFF0C;0-9&#xFF0C;&#x6216;$ &#x7EC4;&#x6210;<br>&#x6570;&#x5B57;&#x4E0D;&#x53EF;&#x4EE5;&#x5F00;&#x5934;&#x3002;<br>&#x4E0D;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;&#xFF0C;&#x4F46;&#x80FD;&#x5305;&#x542B;&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FDD;&#x7559;&#x5B57;&#x3002;<br>Java&#x4E2D;&#x4E25;&#x683C;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x957F;&#x5EA6;&#x65E0;&#x9650;&#x5236;&#x3002;<br>&#x6807;&#x8BC6;&#x7B26;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x7A7A;&#x683C;&#x3002;</p>
+<h3 id="Java&#x4E2D;&#x7684;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;"><a href="#Java&#x4E2D;&#x7684;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;" class="headerlink" title="Java&#x4E2D;&#x7684;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;"></a>Java&#x4E2D;&#x7684;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;</h3><p>Java&#x4E2D;&#x7684;&#x540D;&#x79F0;&#x547D;&#x540D;&#x89C4;&#x8303;:<br>&#x5305;&#x540D;:&#x591A;&#x5355;&#x8BCD;&#x7EC4;&#x6210;&#x65F6;&#x6240;&#x6709;&#x5B57;&#x6BCD;&#x90FD;&#x5C0F;&#x5199;: xxxxxzzz<br>&#x7C7B;&#x540D;&#x3001;&#x63A5;&#x53E3;&#x540D;:&#x591A;&#x5355;&#x8BCD;&#x7EC4;&#x6210;&#x65F6;&#xFF0C;&#x6240;&#x6709;&#x5355;&#x8BCD;&#x7684;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;: XxxYyZzz<br>&#x53D8;&#x91CF;&#x540D;&#x3001;&#x65B9;&#x6CD5;&#x540D;:&#x591A;&#x5355;&#x8BCD;&#x7EC4;&#x6210;&#x65F6;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x5355;&#x8BCD;&#x5F00;&#x59CB;<br>&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;: xxXxYy<br>&#x5E38;&#x91CF;&#x540D;:&#x6240;&#x6709;&#x5B57;&#x6BCD;&#x90FD;&#x5927;&#x5199;&#xFF0C;&#x591A;&#x5355;&#x8BCD;&#x65F6;&#x6BCF;&#x4E2A;&#x5355;&#x8BCD;&#x7528;&#x4E0B;&#x5212;&#x7EBF;&#x8FDE;&#x63A5;: XXX_YYY_ ZZ</p>
+<hr>
+<h1 id="&#x6570;&#x636E;&#x7C7B;&#x578B;"><a href="#&#x6570;&#x636E;&#x7C7B;&#x578B;" class="headerlink" title="&#x6570;&#x636E;&#x7C7B;&#x578B;"></a>&#x6570;&#x636E;&#x7C7B;&#x578B;</h1><p>&#x5728;java&#x4E2D;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5206;&#x4E3A;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x548C;&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5176;&#x4E2D;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6709;8&#x79CD;&#xFF0C;&#x9664;&#x4E86;&#x8FD9;8&#x79CD;&#x4E4B;&#x5916;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x90FD;&#x662F;&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;<br><img src="/2019/11/30/java&#x57FA;&#x7840;&#x6C47;&#x603B;/5.png" alt="img"></p>
+<h3 id="&#x6574;&#x6570;&#x7C7B;&#x578B;-byte&#x3001;-short&#x3001;-int&#x3001;long"><a href="#&#x6574;&#x6570;&#x7C7B;&#x578B;-byte&#x3001;-short&#x3001;-int&#x3001;long" class="headerlink" title="&#x6574;&#x6570;&#x7C7B;&#x578B;: byte&#x3001; short&#x3001; int&#x3001;long"></a>&#x6574;&#x6570;&#x7C7B;&#x578B;: byte&#x3001; short&#x3001; int&#x3001;long</h3><p>Java&#x5404;&#x6574;&#x6570;&#x7C7B;&#x578B;&#x6709;&#x56FA;&#x5B9A;&#x7684;&#x8868;&#x6570;&#x8303;&#x56F4;&#x548C;&#x5B57;&#x6BB5;&#x957F;&#x5EA6;&#xFF0C;&#x4E0D;&#x53D7;&#x5177;&#x4F53;OS&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;java&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x79FB;&#x690D;&#x6027;&#x3002;<br>java&#x7684;&#x6574;&#x578B;&#x5E38;&#x91CF;&#x9ED8;&#x8BA4;&#x4E3A;int&#x578B;&#xFF0C;&#x58F0;&#x660E;long&#x578B;&#x5E38;&#x91CF;&#x987B;&#x540E;&#x52A0;&#x201D;l&#x201D;&#x6216;&#x201D;L&#x201D;</p>
+
       
 
       
@@ -225,6 +269,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">javase</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -318,7 +373,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    目录，不存在的…
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java两种核心机制"><span class="toc-number">1.</span> <span class="toc-text">Java两种核心机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java语言的特点-跨平台性"><span class="toc-number">2.</span> <span class="toc-text">Java语言的特点:跨平台性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#核心机制-垃圾回收"><span class="toc-number"></span> <span class="toc-text">核心机制-垃圾回收</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用JDK的开发工具完成的java程序，交给JRE去运行。JDK包含JRE，JRE包含JVM"><span class="toc-number">1.</span> <span class="toc-text">使用JDK的开发工具完成的java程序，交给JRE去运行。JDK包含JRE，JRE包含JVM .</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编译并运行d盘中的java文件（先编译成-class文件，在运行-class文件）："><span class="toc-number">2.</span> <span class="toc-text">编译并运行d盘中的java文件（先编译成.class文件，在运行.class文件）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关键字与保留字"><span class="toc-number">3.</span> <span class="toc-text">关键字与保留字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#标识符"><span class="toc-number">4.</span> <span class="toc-text">标识符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定义合法标识符规则"><span class="toc-number">5.</span> <span class="toc-text">定义合法标识符规则:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java中的名称命名规范"><span class="toc-number">6.</span> <span class="toc-text">Java中的名称命名规范</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据类型"><span class="toc-number"></span> <span class="toc-text">数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#整数类型-byte、-short、-int、long"><span class="toc-number">1.</span> <span class="toc-text">整数类型: byte、 short、 int、long</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -463,7 +518,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">数据结构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">@ModelAttribute</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -471,19 +534,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+                <a href="javascript:void(0)" class="js-tag color2">javase</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">@ModelAttribute</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -495,11 +550,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
+                <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">json</a>
+                <a href="javascript:void(0)" class="js-tag color1">ssm分页</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -508,14 +563,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">WEB-INF</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">上传图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">上传和下载文件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -535,7 +582,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">上传图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">上传和下载文件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">密码加密</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo插件</a>
               </li>
             
             <div class="clearfix"></div>
