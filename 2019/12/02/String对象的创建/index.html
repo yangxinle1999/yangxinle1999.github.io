@@ -6,15 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | 日积月累</title>
+  <title>String对象的创建 | 日积月累</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="日积月累">
-<meta property="og:url" content="http://yoursite.com/archives/page/7/index.html">
+  <meta name="description" content="&amp;#x5B57;&amp;#x9762;&amp;#x91CF;&amp;#x521B;&amp;#x5EFA;String&amp;#x5BF9;&amp;#x8C61;">
+<meta name="keywords" content="javase">
+<meta property="og:type" content="article">
+<meta property="og:title" content="String对象的创建">
+<meta property="og:url" content="http://yoursite.com/2019/12/02/String对象的创建/index.html">
 <meta property="og:site_name" content="日积月累">
+<meta property="og:description" content="&amp;#x5B57;&amp;#x9762;&amp;#x91CF;&amp;#x521B;&amp;#x5EFA;String&amp;#x5BF9;&amp;#x8C61;">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/2019/12/02/String对象的创建/1.png">
+<meta property="og:image" content="http://yoursite.com/2019/12/02/String对象的创建/2.png">
+<meta property="og:image" content="http://yoursite.com/2019/12/02/String对象的创建/3.png">
+<meta property="og:updated_time" content="2019-12-02T13:40:18.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="日积月累">
+<meta name="twitter:title" content="String对象的创建">
+<meta name="twitter:description" content="&amp;#x5B57;&amp;#x9762;&amp;#x91CF;&amp;#x521B;&amp;#x5EFA;String&amp;#x5BF9;&amp;#x8C61;">
+<meta name="twitter:image" content="http://yoursite.com/2019/12/02/String对象的创建/1.png">
   
     <link rel="alternative" href="/atom.xml" title="日积月累" type="application/atom+xml">
   
@@ -164,309 +173,235 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-String对象的创建" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      String对象的创建
+    </h1>
+  
+
+        
+         
+        <!-- 不蒜子统计 -->
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2019/12/02/String对象的创建/" class="archive-article-date">
+  	<time datetime="2019-12-02T13:26:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-02</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;String&#x5BF9;&#x8C61;"><a href="#&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;String&#x5BF9;&#x8C61;" class="headerlink" title="&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;String&#x5BF9;&#x8C61;"></a>&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;String&#x5BF9;&#x8C61;</h3><a id="more"></a>
+<p>String  s1=&#x201D;abc&#x201D;://&#x5E38;&#x6700;&#x6C60;&#x4E2D;&#x6DFB;&#x52A0;&#x201D;abc&#x201D;&#x5BF9;&#x8C61;&#x8FD4;&#x56DE;&#x5F15;&#x7528;&#x5730;&#x5740;&#x7ED9;s1&#x5BF9;&#x8C61;<br>String s2 = &#x201C;abc&#x201D;//&#x901A;&#x8FC7;equals&#x65B9;&#x6CD5;&#x5224;&#x65AD;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x662F;&#x5426;&#x5DF2;&#x6709;&#x503C;&#x4E3A;abc&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x6709;&#x7684;&#x8BDD;&#x8FD4;&#x56DE;&#x4ED6;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6CA1;&#x6709;&#x7684;&#x8BDD;&#x521B;&#x5EFA;&#x3002;<br><img src="/2019/12/02/String&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;/1.png" alt="img"><br>&#x8FD9;&#x79CD;&#x901A;&#x8FC7;&#x5B57;&#x9762;&#x91CF;&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#x7684;&#xFF0C;&#x4F1A;&#x628A;&#x503C;&#x653E;&#x5728;&#x5806;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#xFF0C;&#x4E0D;&#x80FD;&#x91CD;&#x590D;&#x521B;&#x5EFA;&#xFF08;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;s1&#x548C;s2&#x6307;&#x5411;&#x7684;&#x662F;&#x540C;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#xFF08;&#x201C;123&#x201D;&#x7684;&#x5730;&#x5740;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;s1=s2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String s1=&quot;123&quot;;</span><br><span class="line">String s2=&quot;123&quot;;</span><br><span class="line">System.out.println(s1==s2);</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/12/02/String&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;/2.png" alt="img"><br>&#x8FD4;&#x56DE;true</p>
+<h3 id="new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;"><a href="#new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;" class="headerlink" title="new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;"></a>new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;</h3><p>String s3 = new String(&#x201C;def&#x201D;)://&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x6DFB;&#x52A0;&#x201D;def&#x201D;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x5806;&#x4E2D;&#x521B;&#x5EFA;&#x503C;&#x4E3A;&#x201D;def&#x201D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4ED6;&#x7684;&#x503C;&#x662F;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;def&#x7684;&#x5730;&#x5740;&#xFF0C;s3&#x7684;&#x503C;&#x662F;&#x5806;&#x4E2D;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x5740;&#xFF1B;<br>String s4 = new String(&#x201C;def&#x201D;)://&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x5DF2;&#x6709;&#x503C;&#x4E3A;&#x201D;def&#x201D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x505A;&#x5904;&#x7406;&#xFF0C;&#x5728;&#x5806;&#x4E2D;&#x521B;&#x5EFA;&#x503C;&#x4E3A;&#x201D;def&#x201D;&#x7684;&#x5BF9;&#x8C61;s4.&#x8FD4;&#x56DE;&#x6307;&#x5411;&#x5806;&#x4E2D;s4&#x7684;&#x5F15;&#x7528;;<br>String&#x5728;new&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x5148;&#x770B;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x6709;&#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x503C;&#xFF0C;&#x6709;&#x7684;&#x8BDD;&#x76F4;&#x63A5;new&#xFF0C;&#x6CA1;&#x6709;&#x7684;&#x8BDD;&#x5C31;&#x5148;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x521B;&#x5EFA;&#x518D;new&#xFF0C;&#x6BCF;&#x6B21;new&#x90FD;&#x662F;new&#x51FA;&#x4E0D;&#x540C;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x6240;&#x4EE5;s1&#x4E0D;&#x7B49;&#x4E8E;s2.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String s1=new String(&quot;123&quot;);</span><br><span class="line">String s2=new String(&quot;123&quot;);</span><br><span class="line">System.out.println(s1==s2);</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2019/12/02/String&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;/3.png" alt="img"><br> &#x8FD4;&#x56DE;false</p>
+<hr>
+<p>&#x603B;&#x7ED3;&#xFF1A;&#x5B57;&#x9762;&#x91CF;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EA;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF1B;<br>new&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E38;&#x91CF;&#x6C60;&#x6709;&#x5BF9;&#x8C61;&#xFF0C;&#x5806;&#x4E2D;&#x4E5F;&#x8981;&#x6709;&#x5BF9;&#x8C61;&#xFF0C;&#x6240;&#x4EE5;&#x5B57;&#x9762;&#x91CF;&#x65B9;&#x6CD5;&#x8981;&#x6BD4;new&#x7701;&#x5185;&#x5B58;&#x3002;</p>
+<h3 id="&#x5B57;&#x9762;&#x91CF;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;&#xFF1A;"><a href="#&#x5B57;&#x9762;&#x91CF;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;&#xFF1A;" class="headerlink" title="&#x5B57;&#x9762;&#x91CF;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;&#xFF1A;"></a>&#x5B57;&#x9762;&#x91CF;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;&#xFF1A;</h3><p>Strings5= &#x201C;x&#x201D; + &#x201C;y&#x201D;;  //&#x7ECF;&#x8FC7;JVM&#x4F18;&#x5316;&#xFF0C;&#x76F4;&#x63A5;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x6DFB;&#x52A0;&#x201D;xy&#x201D;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x4F1A;&#x5148;&#x521B;&#x5EFA;&#x201D;x&#x201D;&#x548C;&#x201D;y&#x201D;&#x518D;&#x521B;&#x5EFA;&#x201D;xy&#x201D;&#x3002;</p>
+<h3 id="new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;"><a href="#new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;" class="headerlink" title="new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;"></a>new&#x521B;&#x5EFA;string&#x5BF9;&#x8C61;&#x76F8;&#x52A0;&#x7684;&#x60C5;&#x51B5;</h3><p>String s6=new String(&#x201C;1&#x201D;) + new String(&#x201C;1&#x201D;) +new String(&#x201C;2&#x201D;)<br>//&#x901A;&#x8FC7;StringBuilder&#x5B9E;&#x73B0;&#x3002;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x6DFB;&#x52A0;1&#x548C;2&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x5806;<br>&#x4E2D;&#x521B;&#x5EFA;&#x503C;&#x4E3A;&#x201D;112&#x201D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x628A;&#x5F15;&#x7528;&#x5730;&#x5740;&#x8D4B;&#x7ED9;s6&#xFF08;&#x4E0D;&#x4F1A;&#x5728;&#x5E38;&#x91CF;&#x6C60;&#x4E2D;&#x521B;&#x5EFA;112&#xFF09;</p>
+<p><a href="https://blog.csdn.net/qq_36779138/article/details/81510052" target="_blank" rel="noopener">&#x53C2;&#x8003;</a></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>生活拮据，撰文为生！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/25/ModelAttribute的总结/" class="archive-article-date">
-  	<time datetime="2019-09-25T07:56:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/25/ModelAttribute的总结/">@ModelAttribute的总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">@ModelAttribute</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">javase</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/02/String对象的创建/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/24/ssm分页总结/" class="archive-article-date">
-  	<time datetime="2019-09-24T13:16:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2019/12/02/包装类/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          包装类
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/12/02/操作符与equals方法/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">equals方法==操作符与</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/24/ssm分页总结/">ssm分页总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">ssm分页</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#字面量创建String对象"><span class="toc-number">1.</span> <span class="toc-text">字面量创建String对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new创建string对象"><span class="toc-number">2.</span> <span class="toc-text">new创建string对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字面量相加的情况："><span class="toc-number">3.</span> <span class="toc-text">字面量相加的情况：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new创建string对象相加的情况"><span class="toc-number">4.</span> <span class="toc-text">new创建string对象相加的情况</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/24/关于用沙箱版支付宝付钱的总结/" class="archive-article-date">
-  	<time datetime="2019-09-24T11:09:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-24</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/24/关于用沙箱版支付宝付钱的总结/">关于用沙箱版支付宝付钱的总结</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">支付宝</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/23/关于WEB-INF下的文件及文件之间调用总结/" class="archive-article-date">
-  	<time datetime="2019-09-23T04:45:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/23/关于WEB-INF下的文件及文件之间调用总结/">关于WEB-INF下的文件及文件之间调用总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">WEB-INF</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/22/利用ssm框架向数据库上传图片总结/" class="archive-article-date">
-  	<time datetime="2019-09-22T06:59:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/22/利用ssm框架向数据库上传图片总结/">利用ssm框架向数据库上传图片和文件以及文件的下载总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">上传图片</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">上传和下载文件</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/20/关于hexo-d链接github的443超时问题/" class="archive-article-date">
-  	<time datetime="2019-09-20T13:49:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/20/关于hexo-d链接github的443超时问题/">关于hexo d链接github的443超时问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	 
-<a href="/2019/09/20/markdown的基本语法/" class="archive-article-date">
-  	<time datetime="2019-09-20T04:34:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/09/20/markdown的基本语法/">markdown的基本语法总结</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
+  
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80NjcyNi8yMzIzNQ==">
+  <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/6/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="page-number" href="/archives/page/6/">6</a><span class="page-number current">7</span>
-    </nav>
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 
 
+  
+
+  
 
           </div>
         </div>
@@ -500,8 +435,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
